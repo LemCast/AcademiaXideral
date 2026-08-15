@@ -1,4 +1,5 @@
 package game;
+import characters.Enemy;
 import characters.Player;
 
 import java.util.Scanner;
@@ -193,7 +194,7 @@ public class GameLogic {
         int encounter = (int) (Math.random()* encounters.length);
         //calling respective methods
         if(encounters[encounter].equals("Battle")){
-            //randomBattle();
+            randomBattle();
             } else if(encounters[encounter].equals("Rest")){
             //takeRest();
             } else {
@@ -224,10 +225,98 @@ public class GameLogic {
             printSeparator(20);
         }
         if(player.numDefUpgrades > 0){
-            System.out.println("Defensive trait" + player.defUpgrades[player.numDefUpgrades - 1]);
+            System.out.println("Defensive trait: " + player.defUpgrades[player.numDefUpgrades - 1]);
         }
 
         pressAnything();
+    }
+
+    //creating a random battle
+    public static void randomBattle(){
+        clearConsole();
+        printHeading("An evil entity approaches! Time for a battle!");
+        pressAnything();
+        //creating new enemy with random name
+        battle(new Enemy(enemies[(int)(Math.random()*enemies.length)], player.xp));
+    }
+
+    //the main battle method
+    public static void battle(Enemy enemy){
+        //main battle loop
+        while(true){
+            clearConsole();
+            printHeading(enemy.name + "\nHP: " + enemy.hp + "/" + enemy.maxHp);
+            printHeading(player.name + "\nHP: " + player.hp + "/" + player.maxHp);
+            System.out.println("What will you do? ");
+            printSeparator(20);
+            System.out.println("(1) Fight\n(2) Use Potion\n(3) Flee");
+            int input = choices("->", 3);
+            //react to player input
+            if(input == 1){
+                //FIGHT
+                //calculate damage and taken damage
+                int dmg = player.attack() - enemy.defend();
+                int dmgTaken = enemy.attack() - player.defend();
+                //check that dmg is not negative
+                if(dmgTaken < 0){
+                    //add damage if player defends well
+                    dmg -= dmgTaken/2;
+                    dmgTaken = 0;
+                }
+                if(dmg < 0)
+                    dmg = 0;
+                //deal damage to player and enemy
+                player.hp -= dmgTaken;
+                enemy.hp -= dmg;
+                //print information of this battle turn
+                clearConsole();
+                printHeading("BATTLE");
+                System.out.println("You dealt " + dmg + " damage to the " + enemy.name + ".");
+                printSeparator(15);
+                System.out.println("The " + enemy.name + " dealt " + dmgTaken + "damage to you.");
+                pressAnything();
+                //is the player alive?
+                if(player.hp <= 0){
+                    playerDied();
+                    break;
+                }else if(enemy.hp <= 0){
+                    //tell the player they won
+                    clearConsole();
+                    printHeading("The " + enemy.name + "has been defeated!");
+                    //increase player xp
+                    player.xp += enemy.xp;
+                    System.out.println("You gained " + enemy.xp + "xp from the " + enemy.name);
+                    pressAnything();
+                    break;
+                }
+            }else if(input == 2){
+                //use potion
+            }else{
+                //Flee
+                clearConsole();
+                //is this the final act slash boss battle?
+                if(act != 4){
+                    //chance to espace is 50%
+                    if(Math.random()*10 + 1 <= 5){
+                        printHeading("You ran away! The " + enemy.name + "is now just a memory.");
+                        pressAnything();
+                        break;
+                    }else {
+                        printHeading("You couldn't get away!");
+                        //player is punished with damage
+                        int dmgTaken = enemy.attack();
+                        System.out.println("You took " + dmgTaken + "from the failed escape attempt!");
+                        pressAnything();
+                        //is player still alive?
+                        if (player.hp <= 0)
+                            playerDied();
+                    }
+                }else{
+                    printHeading("No turning back now. Face your destiny!");
+                    pressAnything();
+                }
+            }
+        }
     }
 
     //printing the main menu
@@ -239,6 +328,15 @@ public class GameLogic {
         System.out.println("(1) Continue on the journey");
         System.out.println("(2) Character Info");
         System.out.println("(3) Exit Game");
+    }
+
+    //method that gets called when the player dies
+    public static void playerDied(){
+        clearConsole();
+        printHeading("You are dead. The journey is over...");
+        printHeading("Your total xp was " + player.xp + ".\nGood luck next time!");
+        System.out.println("Game closing...");
+        isRunning = false;
     }
 
     //main game loop
