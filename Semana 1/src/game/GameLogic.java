@@ -10,8 +10,14 @@ public class GameLogic {
 
     public static boolean isRunning;
 
+    //random encounter system
+    public static String[] encounters = {"Battle", "Battle", "Battle", "Rest", "Rest"};
+
+    //enemy names
+    public static String[] enemies = {"Evil Shadow", "Zombie", "Possessed Gorilla", "Devil", "Vampire"};
+
     //Story elements
-    public static int place = 0, act;
+    public static int place = 0, act = 1;
     public static String[] places = {"Setting 1", "Setting 2", "Setting 3", "Setting 4"};
 
     //method to obtain user input from console
@@ -101,9 +107,107 @@ public class GameLogic {
         gameLoop();
     }
 
+    //method that changes the game's values based on player xp
+    public static void checkAct() {
+        //Acts change based on player's xp
+        if (player.xp >= 10 && act == 1) {
+            //go into next act and setting
+            act = 2;
+            place = 2;
+            //story flavor text
+            Story.printFirstActOutro();
+            //player levels up!
+            player.chooseTrait();
+            //into next act
+            Story.printSecondActIntro();
+            //assign new values to enemies
+            enemies[0] = "Evil Shadow";
+            enemies[1] = "Animated Skeleton";
+            enemies[2] = "Chainsaw Butcher";
+            enemies[3] = "Hatred Avatar";
+            enemies[4] = "Banshee";
+            //assign new values to encounters
+            encounters[0] = "Battle";
+            encounters[1] = "Battle";
+            encounters[2] = "Battle";
+            encounters[3] = "Battle";
+            encounters[4] = "Battle";
+            //fully heal player
+            player.hp = player.maxHp;
+        } else if (player.xp >= 50 && act == 2) {
+            //go into next act and setting
+            act = 3;
+            place = 3;
+            //story flavor text
+            Story.printSecondActOutro();
+            //player levels up!
+            player.chooseTrait();
+            //into next act
+            Story.printThirdActIntro();
+            //assign new values to enemies
+            enemies[0] = "Evil Shadow";
+            enemies[1] = "Animated Skeleton";
+            enemies[2] = "Chainsaw Butcher";
+            enemies[3] = "Hatred Avatar";
+            enemies[4] = "Banshee";
+            //assign new values to encounters
+            encounters[0] = "Battle";
+            encounters[1] = "Battle";
+            encounters[2] = "Battle";
+            encounters[3] = "Battle";
+            encounters[4] = "Battle";
+            //fully heal player
+            player.hp = player.maxHp;
+        } else if (player.xp >= 100 && act == 3) {
+            //go into next act and setting
+            act = 4;
+            place = 4;
+            //story flavor text
+            Story.printThirdActOutro();
+            //player levels up!
+            player.chooseTrait();
+            //into next act
+            Story.printFourthActIntro();
+            //assign new values to enemies
+            enemies[0] = "Evil Shadow";
+            enemies[1] = "Animated Skeleton";
+            enemies[2] = "Chainsaw Butcher";
+            enemies[3] = "Hatred Avatar";
+            enemies[4] = "Banshee";
+            //assign new values to encounters
+            encounters[0] = "Battle";
+            encounters[1] = "Battle";
+            encounters[2] = "Battle";
+            encounters[3] = "Battle";
+            encounters[4] = "Battle";
+            //fully heal player
+            player.hp = player.maxHp;
+            //calling the final battle
+            //finalBattle();
+        }
+    }
+
+    //method to calculate a random encounter
+    public static void randomEncounter(){
+        //random number between 0 and the length of the encounters array
+        int encounter = (int) (Math.random()* encounters.length);
+        //calling respective methods
+        if(encounters[encounter].equals("Battle")){
+            //randomBattle();
+            } else if(encounters[encounter].equals("Rest")){
+            //takeRest();
+            } else {
+            //shop();
+        }
+    }
+
     //method to continue the journey
     public static void continueJourney(){
-
+        //Should act be increased?
+        checkAct();
+        //Is the game in the final act?
+        if(act != 4)
+            randomEncounter();
     }
 
     public static void characterInfo(){
