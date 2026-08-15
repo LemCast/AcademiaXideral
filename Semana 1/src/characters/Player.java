@@ -7,6 +7,9 @@ public class Player extends Character{
     //Integers to count the upgrades the player has
     public int numAtkUpgrades, numDefUpgrades;
 
+    //Other player stats
+    public int gold, restsLeft, potions;
+
     //Character skill arrays
     public String[] atkUpgrades = {"Strong", "Fighter", "Swordfighter", "Gunner"};
     public String[] defUpgrades = {"Bulky", "Leather Armor", "Chain Armor", "Orichalcum Armor"};
@@ -17,6 +20,10 @@ public class Player extends Character{
         //Setting the number of initial upgrades to 0
         this.numAtkUpgrades = 0;
         this.numDefUpgrades = 0;
+        //Additional stat setting
+        this.gold = 5;
+        this.restsLeft = 1;
+        this.potions = 0;
         //Let the player select a character trait on initial creation
         chooseTrait();
     }

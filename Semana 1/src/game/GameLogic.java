@@ -184,7 +184,7 @@ public class GameLogic {
             //fully heal player
             player.hp = player.maxHp;
             //calling the final battle
-            //finalBattle();
+            finalBattle();
         }
     }
 
@@ -196,9 +196,9 @@ public class GameLogic {
         if(encounters[encounter].equals("Battle")){
             randomBattle();
             } else if(encounters[encounter].equals("Rest")){
-            //takeRest();
+            takeRest();
             } else {
-            //shop();
+            shop();
         }
     }
 
@@ -216,7 +216,11 @@ public class GameLogic {
         printHeading("CHARACTER INFO");
         System.out.println(player.name + "\tHP: " +player.hp + "/" + player.maxHp);
         printSeparator(20);
-        System.out.println("XP: " + player.xp);
+        //player xp and gold
+        System.out.println("XP: " + player.xp + "\tGold: " + player.gold);
+        printSeparator(20);
+        //# of pots
+        System.out.println("# of Potions: " + player.potions);
         printSeparator(20);
 
         //printing chosen traits
@@ -229,6 +233,55 @@ public class GameLogic {
         }
 
         pressAnything();
+    }
+
+    //encountering traveling merchant
+    public static void shop(){
+        clearConsole();
+        printHeading("You meet a mysterious stranger.\nHe offers you something: ");
+        int price = (int) (Math.random()* (10 + player.potions*3) + 10 + player.potions);
+        System.out.println("- Healing Potion: " + price + " gold.");
+        printSeparator(20);
+        //does the player want to buy one?
+        System.out.println("Do you want to buy one?\n(1) Sure do!\n(2)No thanks.");
+        int input = choices("->", 2);
+        //check user input
+        if(input == 1){
+            clearConsole();
+            //check if player has enough gold
+            if(player.gold >= price){
+                printHeading("You bought a Healing Potion for " + price + " gold!");
+                player.potions++;
+                player.gold -= price;
+            }else
+                printHeading("Not enough cash, stranger!");
+            pressAnything();
+        }
+    }
+
+    //taking a rest
+    public static void takeRest(){
+        clearConsole();
+        if(player.restsLeft >= 1){
+            printHeading("Do you want to take a rest? You have " + player.restsLeft + " left.");
+            System.out.println("(1) Let's get some rest\n(2)I'm good for now.");
+            int input = choices("->", 2);
+            if(input == 1){
+                //player rests
+                clearConsole();
+                if(player.hp < player.maxHp){
+                    int hpRestored = (int) (Math.random() * (player.xp / 4 + 1) + 10);
+                    player.hp += hpRestored;
+                    if(player.hp > player.maxHp)
+                        player.hp = player.maxHp;
+                    System.out.println("After some well-deserved rest, you recover " + hpRestored + " HP.");
+                    System.out.println("You now have " + player.hp + "/" + player.maxHp + " HP.");
+                    player.restsLeft--;
+                }else
+                    System.out.println("You are at full health. Rest is not needed, you are good to go!");
+                pressAnything();
+            }
+        }
     }
 
     //creating a random battle
@@ -285,18 +338,50 @@ public class GameLogic {
                     printHeading("The " + enemy.name + "has been defeated!");
                     //increase player xp
                     player.xp += enemy.xp;
-                    System.out.println("You gained " + enemy.xp + "xp from the " + enemy.name);
+                    System.out.println("You gained " + enemy.xp + "xp from the " + enemy.name + "!");
+                    //random drops
+                    boolean addRest = (Math.random()*5 + 1 <= 2.25);
+                    int goldEarned = (int) (Math.random()*enemy.xp);
+                    if(addRest){
+                        player.restsLeft++;
+                        System.out.println("You have earned an additional rest!");
+                    }
+                    if(goldEarned > 0){
+                        player.gold += goldEarned;
+                        System.out.println("You collected " + goldEarned + " gold from the " + enemy.name + "!");
+                    }
                     pressAnything();
                     break;
                 }
             }else if(input == 2){
                 //use potion
+                if(player.potions > 0 && player.hp < player.maxHp){
+                    //conditions met to use a potion
+                    //ask for confirmation to use potion
+                    printHeading("Drink potion? You have " + player.potions + " left.");
+                    System.out.println("(1) Yes\n(2) No, perhaps later");
+                    input = choices("-> ", 2);
+                    if(input == 1){
+                        //player took potion
+                        player.hp = player.maxHp;
+                        clearConsole();
+                        printHeading("Potion taken! You feel much better now. HP is now back max.");
+                        pressAnything();
+                    }
+                }else{
+                    //cannot take potion
+                    if (player.potions == 0)
+                        printHeading("You have no potions");
+                     else
+                        printHeading("You are already at max HP");
+                     pressAnything();
+                }
             }else{
                 //Flee
                 clearConsole();
                 //is this the final act slash boss battle?
                 if(act != 4){
-                    //chance to espace is 50%
+                    //chance to escape is 50%
                     if(Math.random()*10 + 1 <= 5){
                         printHeading("You ran away! The " + enemy.name + "is now just a memory.");
                         pressAnything();
@@ -328,6 +413,15 @@ public class GameLogic {
         System.out.println("(1) Continue on the journey");
         System.out.println("(2) Character Info");
         System.out.println("(3) Exit Game");
+    }
+
+    //The final battle of the game
+    public static void finalBattle(){
+        //creating the final boss and attributes
+        battle(new Enemy("The Horned Spired Demon", 500));
+        //print proper ending
+        Story.printEnding(player);
+        isRunning = false;
     }
 
     //method that gets called when the player dies

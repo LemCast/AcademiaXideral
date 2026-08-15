@@ -1,5 +1,7 @@
 package game;
 
+import characters.Player;
+
 import static game.GameLogic.player;
 
 //Stores methods to print story sections of the game
@@ -93,7 +95,7 @@ public class Story {
         GameLogic.pressAnything();
     }
 
-    public static void printEnding(){
+    public static void printEnding(Player player){
         GameLogic.clearConsole();
         GameLogic.printSeparator(30);
         System.out.println("After a long and hard journey, you finally reach the end, " + player.name + ".");
