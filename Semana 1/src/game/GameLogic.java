@@ -10,6 +10,10 @@ public class GameLogic {
 
     public static boolean isRunning;
 
+    //Story elements
+    public static int place = 0, act;
+    public static String[] places = {"Setting 1", "Setting 2", "Setting 3", "Setting 4"};
+
     //method to obtain user input from console
     public static int choices(String prompt, int userChoices){
         int input;
@@ -81,8 +85,14 @@ public class GameLogic {
                 nameSet = true;
         }while(!nameSet);
 
+        //print story intro
+        Story.printIntro();
+
         //initialize a new player object with given name
         player = new Player(name);
+
+        //print first story act intro
+        Story.printFirstActIntro();
 
         //setting isRunning to true so the game loop can continue
         isRunning = true;
@@ -102,6 +112,7 @@ public class GameLogic {
         System.out.println(player.name + "\tHP: " +player.hp + "/" + player.maxHp);
         printSeparator(20);
         System.out.println("XP: " + player.xp);
+        printSeparator(20);
 
         //printing chosen traits
         if(player.numAtkUpgrades > 0){
@@ -118,7 +129,7 @@ public class GameLogic {
     //printing the main menu
     public static void printMenu(){
         clearConsole();
-        printHeading("MENU");
+        printHeading(places[place]);
         System.out.println("Choose an action: ");
         printSeparator(20);
         System.out.println("(1) Continue on the journey");
