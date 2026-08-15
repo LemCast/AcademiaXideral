@@ -8,6 +8,8 @@ public class GameLogic {
 
     static Player player;
 
+    public static boolean isRunning;
+
     //method to obtain user input from console
     public static int choices(String prompt, int userChoices){
         int input;
@@ -58,7 +60,7 @@ public class GameLogic {
         clearConsole();
         printSeparator(40);
         printSeparator(30);
-        System.out.println("Title");
+        System.out.println("Spire Top");
         System.out.println("By Aaron Garza");
         printSeparator(30);
         printSeparator(40);
@@ -82,7 +84,60 @@ public class GameLogic {
         //initialize a new player object with given name
         player = new Player(name);
 
+        //setting isRunning to true so the game loop can continue
+        isRunning = true;
+
         //start main game loop
-        // gameLoop();
+        gameLoop();
     }
+
+    //method to continue the journey
+    public static void continueJourney(){
+
+    }
+
+    public static void characterInfo(){
+        clearConsole();
+        printHeading("CHARACTER INFO");
+        System.out.println(player.name + "\tHP: " +player.hp + "/" + player.maxHp);
+        printSeparator(20);
+        System.out.println("XP: " + player.xp);
+
+        //printing chosen traits
+        if(player.numAtkUpgrades > 0){
+            System.out.println("Offensive trait: " + player.atkUpgrades[player.numAtkUpgrades - 1]);
+            printSeparator(20);
+        }
+        if(player.numDefUpgrades > 0){
+            System.out.println("Defensive trait" + player.defUpgrades[player.numDefUpgrades - 1]);
+        }
+
+        pressAnything();
+    }
+
+    //printing the main menu
+    public static void printMenu(){
+        clearConsole();
+        printHeading("MENU");
+        System.out.println("Choose an action: ");
+        printSeparator(20);
+        System.out.println("(1) Continue on the journey");
+        System.out.println("(2) Character Info");
+        System.out.println("(3) Exit Game");
+    }
+
+    //main game loop
+    public static void gameLoop(){
+        while(isRunning){
+            printMenu();
+            int input = choices("->", 3);
+            if(input == 1)
+                continueJourney();
+            else if(input == 2)
+                characterInfo();
+            else
+                isRunning = false;
+        }
+    }
+
 }
