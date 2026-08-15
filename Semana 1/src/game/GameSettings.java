@@ -1,5 +1,4 @@
-package Semana1;
+package game;
 
 public class GameSettings {
-
 }
