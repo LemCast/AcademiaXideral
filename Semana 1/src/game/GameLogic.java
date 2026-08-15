@@ -1,8 +1,12 @@
 package game;
+import characters.Player;
+
 import java.util.Scanner;
 
 public class GameLogic {
     static Scanner scanner = new Scanner(System.in);
+
+    static Player player;
 
     //method to obtain user input from console
     public static int choices(String prompt, int userChoices){
@@ -46,4 +50,39 @@ public class GameLogic {
         scanner.next();
     }
 
+    //method to start the game
+    public static void startGame(){
+        boolean nameSet = false;
+        String name;
+        //printing title screen
+        clearConsole();
+        printSeparator(40);
+        printSeparator(30);
+        System.out.println("Title");
+        System.out.println("By Aaron Garza");
+        printSeparator(30);
+        printSeparator(40);
+        pressAnything();
+
+        //Getting the player's name
+        do{
+            clearConsole();
+            printHeading("Insert a name for your character: ");
+            name = scanner.next();
+            //making sure if the player likes their choice
+            clearConsole();
+            printHeading("Your name is " + name + ".\nIs this correct?");
+            System.out.println("(1) Sure!");
+            System.out.println("(2) Let me choose again.");
+            int choice = choices("->", 2);
+            if(choice == 1)
+                nameSet = true;
+        }while(!nameSet);
+
+        //initialize a new player object with given name
+        player = new Player(name);
+
+        //start main game loop
+        // gameLoop();
+    }
 }
