@@ -121,18 +121,6 @@ public class GameLogic {
             player.chooseTrait();
             //into next act
             Story.printSecondActIntro();
-            //assign new values to enemies
-            enemies[0] = "Evil Shadow";
-            enemies[1] = "Animated Skeleton";
-            enemies[2] = "Chainsaw Butcher";
-            enemies[3] = "Hatred Avatar";
-            enemies[4] = "Banshee";
-            //assign new values to encounters
-            encounters[0] = "Battle";
-            encounters[1] = "Battle";
-            encounters[2] = "Battle";
-            encounters[3] = "Battle";
-            encounters[4] = "Battle";
             //fully heal player
             player.fullHealHp();
         } else if (player.getXp() >= 50 && act == 2) {
@@ -145,18 +133,6 @@ public class GameLogic {
             player.chooseTrait();
             //into next act
             Story.printThirdActIntro();
-            //assign new values to enemies
-            enemies[0] = "Evil Shadow";
-            enemies[1] = "Animated Skeleton";
-            enemies[2] = "Chainsaw Butcher";
-            enemies[3] = "Hatred Avatar";
-            enemies[4] = "Banshee";
-            //assign new values to encounters
-            encounters[0] = "Battle";
-            encounters[1] = "Battle";
-            encounters[2] = "Battle";
-            encounters[3] = "Battle";
-            encounters[4] = "Battle";
             //fully heal player
             player.fullHealHp();
         } else if (player.getXp() >= 100 && act == 3) {
@@ -169,18 +145,6 @@ public class GameLogic {
             player.chooseTrait();
             //into next act
             Story.printFourthActIntro();
-            //assign new values to enemies
-            enemies[0] = "Evil Shadow";
-            enemies[1] = "Animated Skeleton";
-            enemies[2] = "Chainsaw Butcher";
-            enemies[3] = "Hatred Avatar";
-            enemies[4] = "Banshee";
-            //assign new values to encounters
-            encounters[0] = "Battle";
-            encounters[1] = "Battle";
-            encounters[2] = "Battle";
-            encounters[3] = "Battle";
-            encounters[4] = "Battle";
             //fully heal player
             player.fullHealHp();
             //calling the final battle
