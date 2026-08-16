@@ -4,7 +4,7 @@ public abstract class Character {
 
     //attributes every character has
    private String name;
-   private final int maxHp;
+   private final int maxHp; //FINAL implementation
    private int hp, xp;
 
    //constructor for character
@@ -32,7 +32,7 @@ public abstract class Character {
         this.hp = hpCurrent + hpRestored;
     }
 
-    public void potionHealHp() {
+    public void fullHealHp() {
         this.hp = maxHp;
     }
 

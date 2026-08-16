@@ -20,7 +20,7 @@ public class Player extends Character implements CanAttack, CanDefend{
         //Setting the number of initial upgrades to 0
         this.numAtkUpgrades = 0;
         this.numDefUpgrades = 0;
-        //Additional stat setting
+        //Additional stat setting HAS-A
         this.gold = 5;
         this.restsLeft = 1;
         this.potions = 0;
@@ -37,10 +37,6 @@ public class Player extends Character implements CanAttack, CanDefend{
     @Override
     public int defend() {
         return (int) (Math.random()*(getXp()/4 + numDefUpgrades*3 + 3) + getXp()/10 + numDefUpgrades*2 +numAtkUpgrades + 1);
-    }
-
-    public void fullHeal(){
-        potionHealHp();
     }
 
     public void chooseTrait(){

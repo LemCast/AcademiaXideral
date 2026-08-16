@@ -134,7 +134,7 @@ public class GameLogic {
             encounters[3] = "Battle";
             encounters[4] = "Battle";
             //fully heal player
-            player.fullHeal();
+            player.fullHealHp();
         } else if (player.getXp() >= 50 && act == 2) {
             //go into next act and setting
             act = 3;
@@ -158,7 +158,7 @@ public class GameLogic {
             encounters[3] = "Battle";
             encounters[4] = "Battle";
             //fully heal player
-            player.fullHeal();
+            player.fullHealHp();
         } else if (player.getXp() >= 100 && act == 3) {
             //go into next act and setting
             act = 4;
@@ -182,7 +182,7 @@ public class GameLogic {
             encounters[3] = "Battle";
             encounters[4] = "Battle";
             //fully heal player
-            player.fullHeal();
+            player.fullHealHp();
             //calling the final battle
             finalBattle();
         }
@@ -272,7 +272,7 @@ public class GameLogic {
                 if(player.getHp() < player.getMaxHp()){
                     player.restHealHp(player.getHp());
                     if(player.getHp() > player.getMaxHp())
-                        player.fullHeal();
+                        player.fullHealHp();
                     System.out.println("After some well-deserved rest, you recover some HP.");
                     System.out.println("You now have " + player.getHp() + "/" + player.getMaxHp() + " HP.");
                     player.restsLeft--;
@@ -362,7 +362,7 @@ public class GameLogic {
                     input = choices("-> ", 2);
                     if(input == 1){
                         //player took potion
-                        player.potionHealHp();
+                        player.fullHealHp();
                         clearConsole();
                         printHeading("Potion taken! You feel much better now. HP is now back max.");
                         pressAnything();
