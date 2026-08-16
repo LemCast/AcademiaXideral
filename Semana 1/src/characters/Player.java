@@ -58,4 +58,9 @@ public class Player extends Character implements CanAttack, CanDefend{
         GameLogic.pressAnything();
 
     }
+
+    @Override //Quick comparable addition. This program does not have a big window to exemplify this since comparisons are scarce, but adding a collections sort would now be possible if needed based on XP.
+    public int compareTo(Character o) {
+        return Integer.compare(this.getXp(), o.getXp());
+    }
 }

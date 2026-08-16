@@ -1,11 +1,15 @@
 package characters;
 
-public abstract class Character {
+import java.util.ArrayList;
+import java.util.List;
+
+public abstract class Character implements Comparable<Character>{
 
     //attributes every character has
    private String name;
    private final int maxHp; //FINAL implementation
    private int hp, xp;
+   List<Character> characters = new ArrayList<>(); //Quick generics implementation
 
    //constructor for character
     public Character(String name,int maxHp, int xp){
