@@ -12,14 +12,14 @@ public class GameLogic {
     public static boolean isRunning;
 
     //random encounter system
-    public static String[] encounters = {"Battle", "Battle", "Battle", "Rest", "Rest"};
+    private final static String[] encounters = {"Battle", "Battle", "Battle", "Rest", "Rest"};
 
     //enemy names
-    public static String[] enemies = {"Evil Shadow", "Zombie", "Possessed Gorilla", "Devil", "Vampire"};
+    private final static String[] enemies = {"Evil Shadow", "Zombie", "Possessed Gorilla", "Devil", "Vampire"};
 
     //Story elements
     public static int place = 0, act = 1;
-    public static String[] places = {"Setting 1", "Setting 2", "Setting 3", "Setting 4"};
+    public static String[] places = {"Forest", "Castle", "Wasteland", "Mansion"};
 
     //method to obtain user input from console
     public static int choices(String prompt, int userChoices){
@@ -29,7 +29,7 @@ public class GameLogic {
             System.out.println(prompt);
             try{
                 input = Integer.parseInt(scanner.next());
-            }catch(Exception e){
+            }catch(NumberFormatException e){ //EXCEPTION CATCH EXAMPLE
                 input = -1;
                 System.out.println("Enter an integer, please!");
             }
@@ -111,7 +111,7 @@ public class GameLogic {
     //method that changes the game's values based on player xp
     public static void checkAct() {
         //Acts change based on player's xp
-        if (player.getXp() >= 10 && act == 1) {
+        if (player.getXp() >= 3 && act == 1) {
             //go into next act and setting
             act = 2;
             place = 2;
@@ -123,7 +123,7 @@ public class GameLogic {
             Story.printSecondActIntro();
             //fully heal player
             player.fullHealHp();
-        } else if (player.getXp() >= 50 && act == 2) {
+        } else if (player.getXp() >= 5 && act == 2) {
             //go into next act and setting
             act = 3;
             place = 3;
@@ -135,7 +135,7 @@ public class GameLogic {
             Story.printThirdActIntro();
             //fully heal player
             player.fullHealHp();
-        } else if (player.getXp() >= 100 && act == 3) {
+        } else if (player.getXp() >= 8 && act == 3) {
             //go into next act and setting
             act = 4;
             place = 4;

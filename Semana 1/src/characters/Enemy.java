@@ -15,12 +15,12 @@ public class Enemy extends Character implements CanAttack, CanDefend{
     //Enemy specific attack and defense calculations
     @Override
     public int attack() {
-        return (int) (Math.random()*(playerXp/4 + 1) + getXp()/4 + 3);
+        return (int) (Math.random()*(playerXp/2 + 1) + getXp()/4 + 7);
     }
 
     @Override
     public int defend() {
-        return (int) (Math.random()*(playerXp/4 + 1) + getXp()/4 + 3);
+        return (int) (Math.random()*(playerXp/2 + 1) + getXp()/4 + 7);
     }
 
     @Override //Quick comparable addition. This program does not have a big window to exemplify this since comparisons are scarce, but adding a collections sort would now be possible if needed based on XP.

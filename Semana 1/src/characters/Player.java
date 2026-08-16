@@ -31,12 +31,12 @@ public class Player extends Character implements CanAttack, CanDefend{
     //Player specific methods overriding Character super class
     @Override
     public int attack() {
-        return (int) (Math.random()*(getXp()/4 + numAtkUpgrades*3 + 3) + getXp()/10 + numAtkUpgrades*2 +numDefUpgrades + 1);
+        return (int) (Math.random()*(getXp()/2 + numAtkUpgrades*3 + 7) + getXp()/2 + numAtkUpgrades*3 +numDefUpgrades + 5);
     }
 
     @Override
     public int defend() {
-        return (int) (Math.random()*(getXp()/4 + numDefUpgrades*3 + 3) + getXp()/10 + numDefUpgrades*2 +numAtkUpgrades + 1);
+        return (int) (Math.random()*(getXp()/4 + numDefUpgrades*3 + 3) + getXp()/6 + numDefUpgrades*2 +numAtkUpgrades + 1);
     }
 
     public void chooseTrait(){
