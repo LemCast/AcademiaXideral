@@ -2,8 +2,8 @@ package characters;
 
 import game.GameLogic;
 
-public class Player extends Character{
-
+public class Player extends Character implements CanAttack, CanDefend{
+    //Player IS-A Character
     //Integers to count the upgrades the player has
     public int numAtkUpgrades, numDefUpgrades;
 
@@ -31,12 +31,16 @@ public class Player extends Character{
     //Player specific methods overriding Character super class
     @Override
     public int attack() {
-        return (int) (Math.random()*(xp/4 + numAtkUpgrades*3 + 3) + xp/10 + numAtkUpgrades*2 +numDefUpgrades + 1);
+        return (int) (Math.random()*(getXp()/4 + numAtkUpgrades*3 + 3) + getXp()/10 + numAtkUpgrades*2 +numDefUpgrades + 1);
     }
 
     @Override
     public int defend() {
-        return (int) (Math.random()*(xp/4 + numDefUpgrades*3 + 3) + xp/10 + numDefUpgrades*2 +numAtkUpgrades + 1);
+        return (int) (Math.random()*(getXp()/4 + numDefUpgrades*3 + 3) + getXp()/10 + numDefUpgrades*2 +numAtkUpgrades + 1);
+    }
+
+    public void fullHeal(){
+        potionHealHp();
     }
 
     public void chooseTrait(){

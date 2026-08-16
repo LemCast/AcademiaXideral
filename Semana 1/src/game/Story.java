@@ -98,7 +98,7 @@ public class Story {
     public static void printEnding(Player player){
         GameLogic.clearConsole();
         GameLogic.printSeparator(30);
-        System.out.println("After a long and hard journey, you finally reach the end, " + player.name + ".");
+        System.out.println("After a long and hard journey, you finally reach the end, " + player.getName() + ".");
         System.out.println("The world is now saved. Thank you for playing.");
         GameLogic.printSeparator(30);
         System.out.println("Spire Tip");

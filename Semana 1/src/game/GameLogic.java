@@ -111,7 +111,7 @@ public class GameLogic {
     //method that changes the game's values based on player xp
     public static void checkAct() {
         //Acts change based on player's xp
-        if (player.xp >= 10 && act == 1) {
+        if (player.getXp() >= 10 && act == 1) {
             //go into next act and setting
             act = 2;
             place = 2;
@@ -134,8 +134,8 @@ public class GameLogic {
             encounters[3] = "Battle";
             encounters[4] = "Battle";
             //fully heal player
-            player.hp = player.maxHp;
-        } else if (player.xp >= 50 && act == 2) {
+            player.fullHeal();
+        } else if (player.getXp() >= 50 && act == 2) {
             //go into next act and setting
             act = 3;
             place = 3;
@@ -158,8 +158,8 @@ public class GameLogic {
             encounters[3] = "Battle";
             encounters[4] = "Battle";
             //fully heal player
-            player.hp = player.maxHp;
-        } else if (player.xp >= 100 && act == 3) {
+            player.fullHeal();
+        } else if (player.getXp() >= 100 && act == 3) {
             //go into next act and setting
             act = 4;
             place = 4;
@@ -182,7 +182,7 @@ public class GameLogic {
             encounters[3] = "Battle";
             encounters[4] = "Battle";
             //fully heal player
-            player.hp = player.maxHp;
+            player.fullHeal();
             //calling the final battle
             finalBattle();
         }
@@ -214,10 +214,10 @@ public class GameLogic {
     public static void characterInfo(){
         clearConsole();
         printHeading("CHARACTER INFO");
-        System.out.println(player.name + "\tHP: " +player.hp + "/" + player.maxHp);
+        System.out.println(player.getName() + "\tHP: " +player.getHp() + "/" + player.getMaxHp());
         printSeparator(20);
         //player xp and gold
-        System.out.println("XP: " + player.xp + "\tGold: " + player.gold);
+        System.out.println("XP: " + player.getXp() + "\tGold: " + player.gold);
         printSeparator(20);
         //# of pots
         System.out.println("# of Potions: " + player.potions);
@@ -269,13 +269,12 @@ public class GameLogic {
             if(input == 1){
                 //player rests
                 clearConsole();
-                if(player.hp < player.maxHp){
-                    int hpRestored = (int) (Math.random() * (player.xp / 4 + 1) + 10);
-                    player.hp += hpRestored;
-                    if(player.hp > player.maxHp)
-                        player.hp = player.maxHp;
-                    System.out.println("After some well-deserved rest, you recover " + hpRestored + " HP.");
-                    System.out.println("You now have " + player.hp + "/" + player.maxHp + " HP.");
+                if(player.getHp() < player.getMaxHp()){
+                    player.restHealHp(player.getHp());
+                    if(player.getHp() > player.getMaxHp())
+                        player.fullHeal();
+                    System.out.println("After some well-deserved rest, you recover some HP.");
+                    System.out.println("You now have " + player.getHp() + "/" + player.getMaxHp() + " HP.");
                     player.restsLeft--;
                 }else
                     System.out.println("You are at full health. Rest is not needed, you are good to go!");
@@ -290,7 +289,7 @@ public class GameLogic {
         printHeading("An evil entity approaches! Time for a battle!");
         pressAnything();
         //creating new enemy with random name
-        battle(new Enemy(enemies[(int)(Math.random()*enemies.length)], player.xp));
+        battle(new Enemy(enemies[(int)(Math.random()*enemies.length)], player.getXp()));
     }
 
     //the main battle method
@@ -298,8 +297,8 @@ public class GameLogic {
         //main battle loop
         while(true){
             clearConsole();
-            printHeading(enemy.name + "\nHP: " + enemy.hp + "/" + enemy.maxHp);
-            printHeading(player.name + "\nHP: " + player.hp + "/" + player.maxHp);
+            printHeading(enemy.getName() + "\nHP: " + enemy.getHp() + "/" + enemy.getMaxHp());
+            printHeading(player.getName() + "\nHP: " + player.getHp() + "/" + player.getMaxHp());
             System.out.println("What will you do? ");
             printSeparator(20);
             System.out.println("(1) Fight\n(2) Use Potion\n(3) Flee");
@@ -319,43 +318,43 @@ public class GameLogic {
                 if(dmg < 0)
                     dmg = 0;
                 //deal damage to player and enemy
-                player.hp -= dmgTaken;
-                enemy.hp -= dmg;
+                player.damaged(dmgTaken);
+                enemy.damaged(dmg);
                 //print information of this battle turn
                 clearConsole();
                 printHeading("BATTLE");
-                System.out.println("You dealt " + dmg + " damage to the " + enemy.name + ".");
+                System.out.println("You dealt " + dmg + " damage to the " + enemy.getName() + ".");
                 printSeparator(15);
-                System.out.println("The " + enemy.name + " dealt " + dmgTaken + "damage to you.");
+                System.out.println("The " + enemy.getName() + " dealt " + dmgTaken + " damage to you.");
                 pressAnything();
                 //is the player alive?
-                if(player.hp <= 0){
+                if(player.getHp() <= 0){
                     playerDied();
                     break;
-                }else if(enemy.hp <= 0){
+                }else if(enemy.getHp() <= 0){
                     //tell the player they won
                     clearConsole();
-                    printHeading("The " + enemy.name + "has been defeated!");
+                    printHeading("The " + enemy.getName() + " has been defeated!");
                     //increase player xp
-                    player.xp += enemy.xp;
-                    System.out.println("You gained " + enemy.xp + "xp from the " + enemy.name + "!");
+                    player.xpGain(enemy.getXp());
+                    System.out.println("You gained " + enemy.getXp() + "xp from the " + enemy.getName() + "!");
                     //random drops
                     boolean addRest = (Math.random()*5 + 1 <= 2.25);
-                    int goldEarned = (int) (Math.random()*enemy.xp);
+                    int goldEarned = (int) (Math.random()*enemy.getXp());
                     if(addRest){
                         player.restsLeft++;
                         System.out.println("You have earned an additional rest!");
                     }
                     if(goldEarned > 0){
                         player.gold += goldEarned;
-                        System.out.println("You collected " + goldEarned + " gold from the " + enemy.name + "!");
+                        System.out.println("You collected " + goldEarned + " gold from the " + enemy.getName() + "!");
                     }
                     pressAnything();
                     break;
                 }
             }else if(input == 2){
                 //use potion
-                if(player.potions > 0 && player.hp < player.maxHp){
+                if(player.potions > 0 && player.getHp() < player.getMaxHp()){
                     //conditions met to use a potion
                     //ask for confirmation to use potion
                     printHeading("Drink potion? You have " + player.potions + " left.");
@@ -363,7 +362,7 @@ public class GameLogic {
                     input = choices("-> ", 2);
                     if(input == 1){
                         //player took potion
-                        player.hp = player.maxHp;
+                        player.potionHealHp();
                         clearConsole();
                         printHeading("Potion taken! You feel much better now. HP is now back max.");
                         pressAnything();
@@ -383,7 +382,7 @@ public class GameLogic {
                 if(act != 4){
                     //chance to escape is 50%
                     if(Math.random()*10 + 1 <= 5){
-                        printHeading("You ran away! The " + enemy.name + "is now just a memory.");
+                        printHeading("You ran away! The " + enemy.getName() + "is now just a memory.");
                         pressAnything();
                         break;
                     }else {
@@ -393,7 +392,7 @@ public class GameLogic {
                         System.out.println("You took " + dmgTaken + "from the failed escape attempt!");
                         pressAnything();
                         //is player still alive?
-                        if (player.hp <= 0)
+                        if (player.getHp() <= 0)
                             playerDied();
                     }
                 }else{
@@ -428,7 +427,7 @@ public class GameLogic {
     public static void playerDied(){
         clearConsole();
         printHeading("You are dead. The journey is over...");
-        printHeading("Your total xp was " + player.xp + ".\nGood luck next time!");
+        printHeading("Your total xp was " + player.getXp() + ".\nGood luck next time!");
         System.out.println("Game closing...");
         isRunning = false;
     }
