@@ -1,7 +1,7 @@
 #!/bin/bash
-# Prueba end-to-end de todos los endpoints de EmployeeRestController (MongoDB)
+# Prueba end-to-end de todos los endpoints de SoldierRestController (MongoDB)
 # Puerto 8081: el proyecto 15 (MySQL) usa el 8080.
-BASE="http://localhost:8081/api/employees"
+BASE="http://localhost:8081/api/soldiers"
 
 # Un ObjectId con formato valido que no existe en la coleccion
 FANTASMA="000000000000000000000000"
@@ -22,7 +22,7 @@ curl -s "$BASE" | jq .
 
 paso "2. POST crear empleado"
 NUEVO=$(curl -s -X POST "$BASE" -H "Content-Type: application/json" \
-  -d '{"firstName":"Ada","lastName":"Lovelace","email":"ada@gmail.com"}')
+  -d '{"firstName":"Ada","nickname":"Lovelace","email":"ada@gmail.com"}')
 echo "$NUEVO" | jq .
 ID=$(echo "$NUEVO" | jq -r '.id')
 echo "  ➜ ObjectId asignado: $ID"
@@ -31,13 +31,13 @@ paso "3. GET por id ($ID)"
 req GET "$BASE/$ID"
 
 paso "4. PUT actualización completa"
-req PUT "$BASE" "{\"id\":\"$ID\",\"firstName\":\"Ada\",\"lastName\":\"Byron\",\"email\":\"ada.byron@gmail.com\"}"
+req PUT "$BASE" "{\"id\":\"$ID\",\"firstName\":\"Ada\",\"nickname\":\"Byron\",\"email\":\"ada.byron@gmail.com\"}"
 
-paso "5. PATCH actualización parcial (solo lastName)"
-req PATCH "$BASE/$ID" '{"lastName":"King-Noel"}'
+paso "5. PATCH actualización parcial (solo nickname)"
+req PATCH "$BASE/$ID" '{"nickname":"King-Noel"}'
 
 paso "6. PATCH con id en el body (debe fallar: 500 por seguridad)"
-req PATCH "$BASE/$ID" '{"id":"999","lastName":"Hacker"}'
+req PATCH "$BASE/$ID" '{"id":"999","nickname":"Hacker"}'
 
 paso "7. GET de un ObjectId inexistente (debe fallar: 500 id not found)"
 req GET "$BASE/$FANTASMA"

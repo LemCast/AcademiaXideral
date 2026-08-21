@@ -1,4 +1,4 @@
-<title>Employee API con MongoDB</title>
+<title>Soldier API con MongoDB</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Zilla+Slab:wght@600;700&display=swap">
@@ -411,7 +411,7 @@ footer .wrap{
 <header class="masthead">
   <div class="wrap">
     <p class="eyebrow">Spring Boot 4.1 &middot; MongoDB &middot; Guía de laboratorio</p>
-    <h1>Employee API con MongoDB</h1>
+    <h1>Soldier API con MongoDB</h1>
     <p class="lede">El mismo CRUD del proyecto 15, con el motor cambiado por debajo. Mismos cinco verbos, mismas seis rutas — pero sin tablas, sin scripts SQL y con un id que deja de ser un número. Vas a probarlo todo desde la terminal y a ver exactamente qué se movió.</p>
     <ul class="facts">
       <li>~30 min</li>
@@ -468,22 +468,22 @@ footer .wrap{
 <span class="p">$</span> <span class="cmd">docker start mongo-8</span></code></pre>
   </div>
 
-  <p class="note"><strong>Y ya está. No hay scripts SQL.</strong> Compáralo con el proyecto 15, donde había que crear el usuario <code>springstudent</code>, darle permisos, crear la base <code>employee_directory</code> y definir la tabla <code>employee</code> con sus cuatro columnas. Aquí MongoDB standalone no trae autenticación por defecto, y crea la base <em>y</em> la colección solas en el primer insert. La colección <code>employees</code> no existe hasta que guardas el primer empleado.</p>
+  <p class="note"><strong>Y ya está. No hay scripts SQL.</strong> Compáralo con el proyecto 15, donde había que crear el usuario <code>springstudent</code>, darle permisos, crear la base <code>soldier_directory</code> y definir la tabla <code>soldier</code> con sus cuatro columnas. Aquí MongoDB standalone no trae autenticación por defecto, y crea la base <em>y</em> la colección solas en el primer insert. La colección <code>soldiers</code> no existe hasta que guardas el primer soldado.</p>
 
   <h3>Ver los datos por dentro (opcional)</h3>
   <p>El equivalente de MySQL Workbench es <strong>MongoDB Compass</strong>. Pero el cliente de línea de comandos ya viene dentro de la imagen:</p>
 
   <div class="term">
     <button class="copy" type="button">Copiar</button>
-<pre><code><span class="p">$</span> <span class="cmd">docker exec -it mongo-8 mongosh employee_directory</span>
-<span class="p">&gt;</span> <span class="cmd">db.employees.find()</span></code></pre>
+<pre><code><span class="p">$</span> <span class="cmd">docker exec -it mongo-8 mongosh soldiers_directory</span>
+<span class="p">&gt;</span> <span class="cmd">db.soldiers.find()</span></code></pre>
   </div>
 </section>
 
 <section id="arrancar">
   <p class="rubric">Paso dos</p>
   <h2 class="sec"><span class="num">02</span> Arrancar la aplicación</h2>
-  <p>Desde la carpeta del proyecto 16:</p>
+  <p>Desde la carpeta del proyecto:</p>
 
   <div class="term">
     <button class="copy" type="button">Copiar</button>
@@ -507,7 +507,7 @@ footer .wrap{
 
   <div class="term">
     <button class="copy" type="button">Copiar</button>
-<pre><code><span class="p">$</span> <span class="cmd">BASE=http://localhost:8081/api/employees</span>
+<pre><code><span class="p">$</span> <span class="cmd">BASE=http://localhost:8081/api/soldiers</span>
 <span class="p">$</span> <span class="cmd">curl -s $BASE | jq .</span>
 <span class="out">[]</span></code></pre>
   </div>
@@ -556,7 +556,7 @@ footer .wrap{
   <div class="ep">
     <div class="ep-head">
       <span class="verb get">GET</span>
-      <span class="path">/api/employees</span>
+      <span class="path">/api/soldiers</span>
       <span class="src">findAll()</span>
     </div>
     <p>Lista todos los empleados. Sin verbo explícito, sin cabeceras y sin cuerpo.</p>
@@ -572,14 +572,14 @@ footer .wrap{
   }
 ]</span></code></pre>
     </div>
-    <p class="note">Del lado del servidor, este método ya no ejecuta un <code>SELECT</code> escrito a mano: llama a <code>employeeRepository.findAll()</code>, que Spring Data implementó solo.</p>
+    <p class="note">Del lado del servidor, este método ya no ejecuta un <code>SELECT</code> escrito a mano: llama a <code>soldierRepository.findAll()</code>, que Spring Data implementó solo.</p>
   </div>
 
   <div class="ep">
     <div class="ep-head">
       <span class="verb get">GET</span>
-      <span class="path">/api/employees/{id}</span>
-      <span class="src">getEmployee()</span>
+      <span class="path">/api/soldiers/{id}</span>
+      <span class="src">getSoldiers()</span>
     </div>
     <p>Trae un empleado concreto. Aquí es donde necesitas la variable: <code>$BASE/1</code> ya no existe.</p>
     <div class="term">
@@ -592,14 +592,14 @@ footer .wrap{
   "id": "6a8740e9585111a500317cb2"
 }</span></code></pre>
     </div>
-    <p class="note">El <code>@PathVariable</code> ahora es <code>String employeeId</code>, no <code>int</code>. Ese cambio de tipo se propagó por el controlador, el servicio y su interfaz — cinco archivos por un solo campo.</p>
+    <p class="note">El <code>@PathVariable</code> ahora es <code>String soldiersId</code>, no <code>int</code>. Ese cambio de tipo se propagó por el controlador, el servicio y su interfaz — cinco archivos por un solo campo.</p>
   </div>
 
   <div class="ep">
     <div class="ep-head">
       <span class="verb post">POST</span>
-      <span class="path">/api/employees</span>
-      <span class="src">addEmployee()</span>
+      <span class="path">/api/soldiers</span>
+      <span class="src">addSoldier()</span>
     </div>
     <p>Crea un empleado nuevo. El cuerpo es idéntico al del proyecto 15.</p>
     <div class="term">
@@ -614,14 +614,14 @@ footer .wrap{
   "id": "6a8740e9585111a500317cb2"
 }</span></code></pre>
     </div>
-    <p class="note warn"><strong>No mandes <code>id</code>.</strong> El método hace <code>theEmployee.setId(null)</code> antes de guardar. En JPA esto era <code>setId(0)</code>; en MongoDB el equivalente de «esto es nuevo» es <code>null</code>. Y cuidado con la diferencia: si el id llega con valor, Mongo no falla — <strong>reemplaza el documento entero</strong> que tuviera ese id.</p>
+    <p class="note warn"><strong>No mandes <code>id</code>.</strong> El método hace <code>theSoldier.setId(null)</code> antes de guardar. En JPA esto era <code>setId(0)</code>; en MongoDB el equivalente de «esto es nuevo» es <code>null</code>. Y cuidado con la diferencia: si el id llega con valor, Mongo no falla — <strong>reemplaza el documento entero</strong> que tuviera ese id.</p>
   </div>
 
   <div class="ep">
     <div class="ep-head">
       <span class="verb put">PUT</span>
-      <span class="path">/api/employees</span>
-      <span class="src">updateEmployee()</span>
+      <span class="path">/api/soldiers</span>
+      <span class="src">updateSoldier()</span>
     </div>
     <p>Actualiza un empleado por completo. El id sigue viajando <em>dentro del JSON</em>, no en la URL — igual que en el proyecto 15. Nota que ahora va entre comillas, porque es un String.</p>
     <div class="term">
@@ -643,8 +643,8 @@ footer .wrap{
   <div class="ep">
     <div class="ep-head">
       <span class="verb patch">PATCH</span>
-      <span class="path">/api/employees/{id}</span>
-      <span class="src">patchEmployee()</span>
+      <span class="path">/api/soldiers/{id}</span>
+      <span class="src">patchSoldier()</span>
     </div>
     <p>Actualiza solo los campos que mandas. Id en la URL, cuerpo con lo mínimo.</p>
     <div class="term">
@@ -660,20 +660,20 @@ footer .wrap{
 }</span></code></pre>
     </div>
     <p>Aquí las comillas vuelven a ser simples: el cuerpo no contiene ninguna variable que bash tenga que expandir. El id va en la URL, y ahí <code>$ID</code> se expande igual.</p>
-    <p class="note warn"><strong>Sigue rechazando <code>id</code> en el cuerpo</strong> con <em>«Employee id cannot be modified»</em>. Es una guarda de seguridad explícita, no un bug.</p>
+    <p class="note warn"><strong>Sigue rechazando <code>id</code> en el cuerpo</strong> con <em>«Soldier id cannot be modified»</em>. Es una guarda de seguridad explícita, no un bug.</p>
   </div>
 
   <div class="ep">
     <div class="ep-head">
       <span class="verb delete">DELETE</span>
-      <span class="path">/api/employees/{id}</span>
-      <span class="src">deleteEmployee()</span>
+      <span class="path">/api/soldiers/{id}</span>
+      <span class="src">deleteSoldier()</span>
     </div>
     <p>Borra un empleado. Sin cuerpo, y por lo tanto sin <code>-H</code> ni <code>-d</code>.</p>
     <div class="term">
       <button class="copy" type="button">Copiar</button>
 <pre><code><span class="p">$</span> <span class="cmd">curl -s -X DELETE $BASE/$ID</span>
-<span class="out">Deleted employee id - 6a8740e9585111a500317cb2</span></code></pre>
+<span class="out">Deleted soldier id - 6a8740e9585111a500317cb2</span></code></pre>
     </div>
     <p class="note">Sin <code>| jq .</code>: el método devuelve un <code>String</code>, no JSON. Si se lo pasas a jq, revienta con <em>parse error</em>.</p>
   </div>
@@ -703,7 +703,7 @@ footer .wrap{
   <div class="term">
     <button class="copy" type="button">Copiar</button>
 <pre><code><span class="cm"># 0 · variable base y estado inicial</span>
-<span class="p">$</span> <span class="cmd">BASE=http://localhost:8081/api/employees</span>
+<span class="p">$</span> <span class="cmd">BASE=http://localhost:8081/api/soldiers</span>
 <span class="p">$</span> <span class="cmd">curl -s $BASE | jq .</span>
 
 <span class="cm"># 1 · CREATE — el id se guarda solo en $ID</span>
@@ -752,7 +752,7 @@ footer .wrap{
         <tr><td class="wrap-ok"><strong>Preparación</strong></td><td>crear usuario, permisos, base y tabla</td><td>nada — se crea sola al insertar</td></tr>
         <tr><td class="wrap-ok"><strong>Entidad</strong></td><td><code>@Entity</code>, <code>@Table</code>, <code>@Column</code>, <code>@GeneratedValue</code></td><td><code>@Document</code> y <code>@Id</code>, nada más</td></tr>
         <tr><td class="wrap-ok"><strong>Tipo del id</strong></td><td><code>int</code>, autoincremental</td><td><code>String</code>, ObjectId hexadecimal</td></tr>
-        <tr><td class="wrap-ok"><strong>Acceso a datos</strong></td><td><code>EmployeeDAO</code> + <code>EmployeeDAOJpaImpl</code> escritos a mano</td><td><code>EmployeeRepository extends MongoRepository</code> — interfaz vacía</td></tr>
+        <tr><td class="wrap-ok"><strong>Acceso a datos</strong></td><td><code>SoldierDAO</code> + <code>SoldierDAOJpaImpl</code> escritos a mano</td><td><code>SoldierRepository extends MongoRepository</code> — interfaz vacía</td></tr>
         <tr><td class="wrap-ok"><strong>Transacciones</strong></td><td><code>@Transactional</code> en el servicio</td><td>ninguna — atomicidad por documento</td></tr>
         <tr><td class="wrap-ok"><strong>Alta nueva</strong></td><td><code>setId(0)</code></td><td><code>setId(null)</code></td></tr>
         <tr><td class="wrap-ok"><strong>Puerto</strong></td><td>8080</td><td>8081</td></tr>
@@ -764,14 +764,14 @@ footer .wrap{
   <p>Todos los tutoriales de MongoDB con Spring — y las respuestas de StackOverflow, y los cursos grabados antes de 2025 — te dicen que la conexión se configura así:</p>
 
   <div class="term">
-<pre><code><span class="cmd">spring.data.mongodb.uri=mongodb://localhost:27017/employee_directory</span>   <span class="cm"># ← ya no funciona</span></code></pre>
+<pre><code><span class="cmd">spring.data.mongodb.uri=mongodb://localhost:27017/soldier_directory</span>   <span class="cm"># ← ya no funciona</span></code></pre>
   </div>
 
   <p>En Spring Boot 4 esa propiedad quedó <strong>deprecada a nivel <code>error</code></strong> desde la versión 4.0.0. El prefijo correcto perdió el <code>data</code>:</p>
 
   <div class="term">
     <button class="copy" type="button">Copiar</button>
-<pre><code><span class="cmd">spring.mongodb.uri=mongodb://localhost:27017/employee_directory</span></code></pre>
+<pre><code><span class="cmd">spring.mongodb.uri=mongodb://localhost:27017/soldier_directory</span></code></pre>
   </div>
 
   <p class="note warn"><strong>Y lo peligroso es que no falla.</strong> Con el nombre viejo la aplicación arranca sin un solo error, acepta POSTs, devuelve GETs y todo parece perfecto. Lo que pasa por debajo es que Spring ignora la propiedad en silencio y se conecta a su valor por defecto, <code>mongodb://localhost/test</code>. Estás guardando y leyendo correctamente — pero en la base <code>test</code>, no en la tuya. Solo lo descubres cuando abres Compass y tu base no existe.</p>
@@ -781,23 +781,23 @@ footer .wrap{
   <div class="term">
     <button class="copy" type="button">Copiar</button>
 <pre><code><span class="p">$</span> <span class="cmd">docker exec mongo-8 mongosh --quiet --eval 'db.adminCommand({listDatabases:1}).databases.map(d=&gt;d.name)'</span>
-<span class="out">[ 'admin', 'config', 'employee_directory', 'local' ]</span></code></pre>
+<span class="out">[ 'admin', 'config', 'soldier_directory', 'local' ]</span></code></pre>
   </div>
 
-  <p>Si en esa lista ves <code>test</code> en lugar de <code>employee_directory</code>, revisa el prefijo. La lección general va más allá de MongoDB: <strong>una propiedad mal escrita en Spring Boot no truena, se ignora</strong>. El silencio no es señal de que algo esté bien configurado.</p>
+  <p>Si en esa lista ves <code>test</code> en lugar de <code>soldier_directory</code>, revisa el prefijo. La lección general va más allá de MongoDB: <strong>una propiedad mal escrita en Spring Boot no truena, se ignora</strong>. El silencio no es señal de que algo esté bien configurado.</p>
 
   <h3>El paquete que desapareció</h3>
   <p>Lo más llamativo es lo que <em>no</em> está. El paquete <code>dao/</code> completo — la interfaz más su implementación con <code>EntityManager</code>, unas setenta líneas — se reemplazó por esto:</p>
 
   <div class="term">
-<pre><code><span class="cmd">public interface EmployeeRepository extends MongoRepository&lt;Employee, String&gt; {
+<pre><code><span class="cmd">public interface SoldierRepository extends MongoRepository&lt;Soldier, String&gt; {
 }</span></code></pre>
   </div>
 
   <p>Una interfaz vacía. Spring Data lee los dos parámetros de tipo — la entidad y el tipo de su <code>@Id</code> — y genera la implementación al arrancar, con <code>findAll()</code>, <code>findById()</code>, <code>save()</code> y <code>deleteById()</code> ya resueltos. Si mañana necesitas una consulta propia, basta declarar el método siguiendo la convención de nombres:</p>
 
   <div class="term">
-<pre><code><span class="cmd">List&lt;Employee&gt; findByLastName(String lastName);</span></code></pre>
+<pre><code><span class="cmd">List&lt;Soldier&gt; findByLastName(String lastName);</span></code></pre>
   </div>
 
   <p>y Spring Data la implementa a partir del nombre, sin que escribas la consulta.</p>
@@ -849,7 +849,7 @@ footer .wrap{
         </tr>
         <tr>
           <td class="wrap-ok"><strong>El POST ignoró<br>el id que mandé</strong></td>
-          <td>A propósito: <code>addEmployee()</code> hace <code>setId(null)</code> antes de guardar, para que siempre sea un alta.</td>
+          <td>A propósito: <code>addSoldier()</code> hace <code>setId(null)</code> antes de guardar, para que siempre sea un alta.</td>
         </tr>
         <tr>
           <td class="wrap-ok"><strong>La colección no aparece<br>en Compass</strong></td>
@@ -893,7 +893,7 @@ footer .wrap{
           <td>Agrega <code>-H "Content-Type: application/json"</code>.</td>
         </tr>
         <tr>
-          <td class="wrap-ok">La URL sale literal como<br><code>/api/employees/$ID</code></td>
+          <td class="wrap-ok">La URL sale literal como<br><code>/api/soldiers/$ID</code></td>
           <td>Usaste comillas simples donde bash no expande variables, o <code>$ID</code> está vacía.</td>
           <td>Comprueba con <code>echo $ID</code>. Si está vacía, vuelve a hacer el POST capturando el id.</td>
         </tr>
@@ -935,7 +935,7 @@ footer .wrap{
     <li><strong>Rompe el PUT.</strong> Manda un PUT omitiendo el campo <code>email</code>. Consulta después ese empleado y explica el resultado.</li>
     <li><strong>Compara los dos proyectos.</strong> Levanta el 15 en el 8080 y el 16 en el 8081 al mismo tiempo. Haz el mismo POST en ambos y pon las dos respuestas lado a lado. ¿Cuál es la única diferencia?</li>
     <li><strong>Limpieza.</strong> Borra todo lo que creaste y deja la colección vacía.</li>
-    <li><strong>Reto.</strong> Agrega a <code>EmployeeRepository</code> el método <code>List&lt;Employee&gt; findByLastName(String lastName)</code>, expón un endpoint que lo use y pruébalo con curl. No escribas ninguna consulta.</li>
+    <li><strong>Reto.</strong> Agrega a <code>SoldierRepository</code> el método <code>List&lt;Soldier&gt; findByLastName(String lastName)</code>, expón un endpoint que lo use y pruébalo con curl. No escribas ninguna consulta.</li>
   </ol>
 </section>
 
@@ -944,8 +944,8 @@ footer .wrap{
 
 <footer>
   <div class="wrap">
-    <span>Employee API &middot; Spring Boot 4.1 &middot; MongoDB 8 &middot; Java 21</span>
-    <span>localhost:8081/api/employees</span>
+    <span>Soldier API &middot; Spring Boot 4.1 &middot; MongoDB 8 &middot; Java 21</span>
+    <span>localhost:8081/api/soldiers</span>
   </div>
 </footer>
 

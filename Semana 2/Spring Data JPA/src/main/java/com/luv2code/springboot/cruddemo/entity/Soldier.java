@@ -3,8 +3,8 @@ package com.luv2code.springboot.cruddemo.entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name="employee")
-public class Employee {
+@Table(name="soldier")
+public class Soldier {
 
     // define fields
     @Id
@@ -15,21 +15,21 @@ public class Employee {
     @Column(name="first_name")
     private String firstName;
 
-    @Column(name="last_name")
-    private String lastName;
+    @Column(name="nickname")
+    private String nickname;
 
     @Column(name="email")
     private String email;
 
 
     // define constructors
-    public Employee() {
+    public Soldier() {
 
     }
 
-    public Employee(String firstName, String lastName, String email) {
+    public Soldier(String firstName, String nickname, String email) {
         this.firstName = firstName;
-        this.lastName = lastName;
+        this.nickname = nickname;
         this.email = email;
     }
 
@@ -51,12 +51,12 @@ public class Employee {
         this.firstName = firstName;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getNickname() {
+        return nickname;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
     }
 
     public String getEmail() {
@@ -70,10 +70,10 @@ public class Employee {
     // define toString
     @Override
     public String toString() {
-        return "Employee{" +
+        return "Soldier{" +
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
+                ", nickname='" + nickname + '\'' +
                 ", email='" + email + '\'' +
                 '}';
     }

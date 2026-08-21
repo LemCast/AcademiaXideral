@@ -3,8 +3,8 @@ package com.luv2code.springboot.cruddemo.entity;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "employees")
-public class Employee {
+@Document(collection = "soldiers")
+public class Soldier {
 
     // define fields
     //
@@ -17,19 +17,19 @@ public class Employee {
     // llama igual que la propiedad Java. No hay nada que mapear.
     private String firstName;
 
-    private String lastName;
+    private String nickname;
 
     private String email;
 
 
     // define constructors
-    public Employee() {
+    public Soldier() {
 
     }
 
-    public Employee(String firstName, String lastName, String email) {
+    public Soldier(String firstName, String nickname, String email) {
         this.firstName = firstName;
-        this.lastName = lastName;
+        this.nickname = nickname;
         this.email = email;
     }
 
@@ -51,12 +51,12 @@ public class Employee {
         this.firstName = firstName;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getNickname() {
+        return nickname;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
     }
 
     public String getEmail() {
@@ -70,10 +70,10 @@ public class Employee {
     // define toString
     @Override
     public String toString() {
-        return "Employee{" +
+        return "Soldier{" +
                 "id='" + id + '\'' +
                 ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
+                ", nickname='" + nickname + '\'' +
                 ", email='" + email + '\'' +
                 '}';
     }
