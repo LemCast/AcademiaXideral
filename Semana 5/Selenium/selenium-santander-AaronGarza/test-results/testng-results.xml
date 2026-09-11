@@ -1,0 +1,1719 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="60" passed="60" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-09-08T23:11:08 CST" name="Test Automation Santander" finished-at="2026-09-08T23:18:15 CST" duration-ms="426833">
+    <groups>
+    </groups>
+    <test started-at="2026-09-08T23:11:08 CST" name="Santander - Links de Menu Principal" finished-at="2026-09-08T23:18:15 CST" duration-ms="426833">
+      <class name="tests.BankSiteTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:11:08 CST" name="setUp" finished-at="2026-09-08T23:11:11 CST" duration-ms="2754" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyBancaPrivada()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:11:11 CST" name="verifyBancaPrivada" finished-at="2026-09-08T23:11:13 CST" duration-ms="2007" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBancaPrivada -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:11:13 CST" name="tearDown" finished-at="2026-09-08T23:11:15 CST" duration-ms="1662" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:11:15 CST" name="setUp" finished-at="2026-09-08T23:11:17 CST" duration-ms="2489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyHazteCliente()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:11:17 CST" name="verifyHazteCliente" finished-at="2026-09-08T23:11:19 CST" duration-ms="1868" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHazteCliente -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:11:19 CST" name="tearDown" finished-at="2026-09-08T23:11:21 CST" duration-ms="1659" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:11:21 CST" name="setUp" finished-at="2026-09-08T23:11:23 CST" duration-ms="2475" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:11:23 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:11:25 CST" duration-ms="1483" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Personas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[tarjetas-de-credito/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[tarjetas-de-credito]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:11:25 CST" name="tearDown" finished-at="2026-09-08T23:11:26 CST" duration-ms="1661" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:11:26 CST" name="setUp" finished-at="2026-09-08T23:11:29 CST" duration-ms="2519" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:11:29 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:11:31 CST" duration-ms="1966" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Personas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[creditos-personales/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[creditos-personales]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:11:31 CST" name="tearDown" finished-at="2026-09-08T23:11:32 CST" duration-ms="1671" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:11:32 CST" name="setUp" finished-at="2026-09-08T23:11:35 CST" duration-ms="2468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:11:35 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:11:37 CST" duration-ms="1924" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Personas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[creditos-hipotecarios/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[creditos-hipotecarios]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:11:37 CST" name="tearDown" finished-at="2026-09-08T23:11:38 CST" duration-ms="1652" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:11:38 CST" name="setUp" finished-at="2026-09-08T23:11:41 CST" duration-ms="2477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:11:41 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:11:44 CST" duration-ms="2626" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Personas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[simulador-hipotecario/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[simulador-hipotecario]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:11:44 CST" name="tearDown" finished-at="2026-09-08T23:11:45 CST" duration-ms="1666" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:11:45 CST" name="setUp" finished-at="2026-09-08T23:11:48 CST" duration-ms="2484" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:11:48 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:11:50 CST" duration-ms="2227" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Personas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[credito-automotriz/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[credito-automotriz]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:11:50 CST" name="tearDown" finished-at="2026-09-08T23:11:52 CST" duration-ms="1667" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:11:52 CST" name="setUp" finished-at="2026-09-08T23:11:54 CST" duration-ms="2552" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:11:54 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:11:56 CST" duration-ms="2006" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Personas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[buro-de-credito/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[buro-de-credito]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:11:56 CST" name="tearDown" finished-at="2026-09-08T23:11:58 CST" duration-ms="1679" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:11:58 CST" name="setUp" finished-at="2026-09-08T23:12:00 CST" duration-ms="2584" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:12:00 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:12:02 CST" duration-ms="1463" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Personas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[santander-digital/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[santander-digital]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:12:02 CST" name="tearDown" finished-at="2026-09-08T23:12:04 CST" duration-ms="1654" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:12:04 CST" name="setUp" finished-at="2026-09-08T23:12:06 CST" duration-ms="2490" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:12:06 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:12:08 CST" duration-ms="1507" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Personas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[app-santander/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[app-santander]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:12:08 CST" name="tearDown" finished-at="2026-09-08T23:12:09 CST" duration-ms="1664" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:12:09 CST" name="setUp" finished-at="2026-09-08T23:12:12 CST" duration-ms="2504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:12:12 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:12:14 CST" duration-ms="2032" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Personas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[santander-web/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[santander-web]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:12:14 CST" name="tearDown" finished-at="2026-09-08T23:12:15 CST" duration-ms="1641" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:12:15 CST" name="setUp" finished-at="2026-09-08T23:12:18 CST" duration-ms="2529" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:12:18 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:12:19 CST" duration-ms="1510" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Personas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[limite-por-transaccion/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[limite-por-transaccion]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:12:19 CST" name="tearDown" finished-at="2026-09-08T23:12:21 CST" duration-ms="1673" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:12:21 CST" name="setUp" finished-at="2026-09-08T23:12:24 CST" duration-ms="2477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:12:24 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:12:26 CST" duration-ms="2134" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Personas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[personas/cuentas/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[personas/cuentas]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:12:26 CST" name="tearDown" finished-at="2026-09-08T23:12:27 CST" duration-ms="1657" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:12:27 CST" name="setUp" finished-at="2026-09-08T23:12:30 CST" duration-ms="2458" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:12:30 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:12:32 CST" duration-ms="1899" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Personas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[cuentas/basica/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cuentas/basica]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:12:32 CST" name="tearDown" finished-at="2026-09-08T23:12:33 CST" duration-ms="1652" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:12:33 CST" name="setUp" finished-at="2026-09-08T23:12:36 CST" duration-ms="2529" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:12:36 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:12:38 CST" duration-ms="1950" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Personas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[basica-nomina/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[basica-nomina]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:12:38 CST" name="tearDown" finished-at="2026-09-08T23:12:39 CST" duration-ms="1663" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:12:39 CST" name="setUp" finished-at="2026-09-08T23:12:42 CST" duration-ms="2548" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:12:42 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:12:44 CST" duration-ms="1942" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Personas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[cheque-saldo-promedio/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cheque-saldo-promedio]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:12:44 CST" name="tearDown" finished-at="2026-09-08T23:12:46 CST" duration-ms="1667" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:12:46 CST" name="setUp" finished-at="2026-09-08T23:12:48 CST" duration-ms="2502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:12:48 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:12:50 CST" duration-ms="2203" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Personas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[portabilidad-de-nomina/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[portabilidad-de-nomina]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:12:50 CST" name="tearDown" finished-at="2026-09-08T23:12:52 CST" duration-ms="1671" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:12:52 CST" name="setUp" finished-at="2026-09-08T23:12:55 CST" duration-ms="2520" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:12:55 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:12:57 CST" duration-ms="2130" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Personas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[#fondos-de-inversion]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[fondos-de-inversion]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:12:57 CST" name="tearDown" finished-at="2026-09-08T23:12:58 CST" duration-ms="1657" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:12:58 CST" name="setUp" finished-at="2026-09-08T23:13:01 CST" duration-ms="2481" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:13:01 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:13:03 CST" duration-ms="2120" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Personas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[#inversiones-a-plazo]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[inversiones-a-plazo]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:13:03 CST" name="tearDown" finished-at="2026-09-08T23:13:05 CST" duration-ms="1662" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:13:05 CST" name="setUp" finished-at="2026-09-08T23:13:07 CST" duration-ms="2526" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:13:07 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:13:09 CST" duration-ms="2122" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Personas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[#notas-estructuradas]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[notas-estructuradas]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:13:09 CST" name="tearDown" finished-at="2026-09-08T23:13:11 CST" duration-ms="1632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:13:11 CST" name="setUp" finished-at="2026-09-08T23:13:13 CST" duration-ms="2474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:13:13 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:13:16 CST" duration-ms="3038" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Personas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[seguros.html#auto]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[seguros.html#auto]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:13:16 CST" name="tearDown" finished-at="2026-09-08T23:13:18 CST" duration-ms="1678" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:13:18 CST" name="setUp" finished-at="2026-09-08T23:13:21 CST" duration-ms="2528" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:13:21 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:13:23 CST" duration-ms="2286" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Personas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[seguros.html#vida]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[seguros.html#vida]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:13:23 CST" name="tearDown" finished-at="2026-09-08T23:13:25 CST" duration-ms="1651" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:13:25 CST" name="setUp" finished-at="2026-09-08T23:13:27 CST" duration-ms="2462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:13:27 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:13:29 CST" duration-ms="2310" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Personas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[seguros.html#hogar]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[seguros.html#hogar]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:13:29 CST" name="tearDown" finished-at="2026-09-08T23:13:31 CST" duration-ms="1656" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:13:31 CST" name="setUp" finished-at="2026-09-08T23:13:33 CST" duration-ms="2493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:13:33 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:13:36 CST" duration-ms="3010" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Personas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[seguros.html#ahorro]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[seguros.html#ahorro]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:13:36 CST" name="tearDown" finished-at="2026-09-08T23:13:38 CST" duration-ms="1677" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:13:38 CST" name="setUp" finished-at="2026-09-08T23:13:41 CST" duration-ms="2562" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:13:41 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:13:44 CST" duration-ms="2889" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Personas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[seguros.html#gastos-medicos]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[gastos-medicos]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:13:44 CST" name="tearDown" finished-at="2026-09-08T23:13:45 CST" duration-ms="1673" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:13:45 CST" name="setUp" finished-at="2026-09-08T23:13:50 CST" duration-ms="4551" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:13:50 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:13:53 CST" duration-ms="3001" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Personas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[seguros.html#pertenencias]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[pertenencias]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:13:53 CST" name="tearDown" finished-at="2026-09-08T23:13:54 CST" duration-ms="1670" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:13:54 CST" name="setUp" finished-at="2026-09-08T23:13:58 CST" duration-ms="3323" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:13:58 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:14:00 CST" duration-ms="1764" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Personas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[superlinea.html]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[superlinea]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:14:00 CST" name="tearDown" finished-at="2026-09-08T23:14:01 CST" duration-ms="1651" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:14:01 CST" name="setUp" finished-at="2026-09-08T23:14:04 CST" duration-ms="2529" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:14:04 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:14:06 CST" duration-ms="2609" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Personas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sucursales.html]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[sucursales]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:14:06 CST" name="tearDown" finished-at="2026-09-08T23:14:08 CST" duration-ms="1662" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:14:08 CST" name="setUp" finished-at="2026-09-08T23:14:11 CST" duration-ms="2478" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:14:11 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:14:12 CST" duration-ms="1960" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Personas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[cajeros-automaticos.html]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cajeros-automaticos]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:14:12 CST" name="tearDown" finished-at="2026-09-08T23:14:14 CST" duration-ms="1649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:14:14 CST" name="setUp" finished-at="2026-09-08T23:14:17 CST" duration-ms="2555" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:14:17 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:14:19 CST" duration-ms="2557" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Personas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[operaciones-canales-alternos/index.html]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[canales-alternos]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:14:19 CST" name="tearDown" finished-at="2026-09-08T23:14:21 CST" duration-ms="1662" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:14:21 CST" name="setUp" finished-at="2026-09-08T23:14:23 CST" duration-ms="2509" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:14:23 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:14:25 CST" duration-ms="1789" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Personas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[centro-de-ayuda.html]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[centro-de-ayuda]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:14:25 CST" name="tearDown" finished-at="2026-09-08T23:14:27 CST" duration-ms="1651" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:14:27 CST" name="setUp" finished-at="2026-09-08T23:14:29 CST" duration-ms="2491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:14:29 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:14:31 CST" duration-ms="1900" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Personas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[centro-de-seguridad/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[centro-de-seguridad]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:14:31 CST" name="tearDown" finished-at="2026-09-08T23:14:33 CST" duration-ms="1677" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:14:33 CST" name="setUp" finished-at="2026-09-08T23:14:35 CST" duration-ms="2484" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:14:35 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:14:37 CST" duration-ms="1905" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Personas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[tutoriales.html]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[tutoriales]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:14:37 CST" name="tearDown" finished-at="2026-09-08T23:14:39 CST" duration-ms="1661" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:14:39 CST" name="setUp" finished-at="2026-09-08T23:14:42 CST" duration-ms="2687" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:14:42 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:14:44 CST" duration-ms="2149" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Personas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[terminos-y-condiciones.html]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[tyc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:14:44 CST" name="tearDown" finished-at="2026-09-08T23:14:45 CST" duration-ms="1681" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:14:45 CST" name="setUp" finished-at="2026-09-08T23:14:48 CST" duration-ms="2556" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:14:48 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:14:50 CST" duration-ms="1945" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Personas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[tramite-por-defuncion.html]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[tramite-por-defuncion]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:14:50 CST" name="tearDown" finished-at="2026-09-08T23:14:52 CST" duration-ms="1657" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:14:52 CST" name="setUp" finished-at="2026-09-08T23:14:54 CST" duration-ms="2551" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:14:54 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:14:56 CST" duration-ms="2144" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Personas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[select.html]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[select.html]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:14:56 CST" name="tearDown" finished-at="2026-09-08T23:14:58 CST" duration-ms="1637" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:14:58 CST" name="setUp" finished-at="2026-09-08T23:15:00 CST" duration-ms="2484" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:15:00 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:15:02 CST" duration-ms="2020" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Personas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[promociones/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[promociones]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:15:02 CST" name="tearDown" finished-at="2026-09-08T23:15:04 CST" duration-ms="1647" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:15:04 CST" name="setUp" finished-at="2026-09-08T23:15:07 CST" duration-ms="2516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:15:07 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:15:09 CST" duration-ms="2758" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Personas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[uniquerewards.santander.com.mx/web/home]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[uniquerewards]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:15:09 CST" name="tearDown" finished-at="2026-09-08T23:15:11 CST" duration-ms="1647" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:15:11 CST" name="setUp" finished-at="2026-09-08T23:15:17 CST" duration-ms="5728" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:15:17 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:15:19 CST" duration-ms="1982" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Personas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mundohogar.com.mx  ]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[mundohogar]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:15:19 CST" name="tearDown" finished-at="2026-09-08T23:15:20 CST" duration-ms="1659" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:15:20 CST" name="setUp" finished-at="2026-09-08T23:15:23 CST" duration-ms="2519" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:15:23 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:15:25 CST" duration-ms="2188" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Personas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[colectivos.html]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[colectivos]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:15:25 CST" name="tearDown" finished-at="2026-09-08T23:15:27 CST" duration-ms="1658" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:15:27 CST" name="setUp" finished-at="2026-09-08T23:15:35 CST" duration-ms="8065" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:15:35 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:15:38 CST" duration-ms="3132" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Personas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[cashback.html]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cashback]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:15:38 CST" name="tearDown" finished-at="2026-09-08T23:15:40 CST" duration-ms="1667" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:15:40 CST" name="setUp" finished-at="2026-09-08T23:15:42 CST" duration-ms="2482" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:15:42 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:15:45 CST" duration-ms="2548" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Empresas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[bei/home.html]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[bei/home]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:15:45 CST" name="tearDown" finished-at="2026-09-08T23:15:46 CST" duration-ms="1632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:15:46 CST" name="setUp" finished-at="2026-09-08T23:15:49 CST" duration-ms="2493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:15:49 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:15:51 CST" duration-ms="2074" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Empresas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[multinacionales.html]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[multinacionales]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:15:51 CST" name="tearDown" finished-at="2026-09-08T23:15:53 CST" duration-ms="1652" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:15:53 CST" name="setUp" finished-at="2026-09-08T23:15:55 CST" duration-ms="2511" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:15:55 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:15:59 CST" duration-ms="3537" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[PyMes]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pyme/cuentas.html]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[pyme/cuentas]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:15:59 CST" name="tearDown" finished-at="2026-09-08T23:16:00 CST" duration-ms="1651" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:16:00 CST" name="setUp" finished-at="2026-09-08T23:16:03 CST" duration-ms="2516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:16:03 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:16:07 CST" duration-ms="4563" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[PyMes]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pyme/creditos.html]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[pyme/creditos]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:16:07 CST" name="tearDown" finished-at="2026-09-08T23:16:09 CST" duration-ms="1645" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:16:09 CST" name="setUp" finished-at="2026-09-08T23:16:11 CST" duration-ms="2498" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:16:11 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:16:17 CST" duration-ms="5083" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[PyMes]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pyme/seguros.html]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[pyme/seguros]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:16:17 CST" name="tearDown" finished-at="2026-09-08T23:16:18 CST" duration-ms="1664" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:16:18 CST" name="setUp" finished-at="2026-09-08T23:16:21 CST" duration-ms="2458" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:16:21 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:16:24 CST" duration-ms="3435" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[PyMes]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[coberturas-y-cambios.html]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[coberturas-y-cambios]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:16:24 CST" name="tearDown" finished-at="2026-09-08T23:16:26 CST" duration-ms="1648" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:16:26 CST" name="setUp" finished-at="2026-09-08T23:16:28 CST" duration-ms="2530" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:16:28 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:16:33 CST" duration-ms="4341" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[PyMes]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[negocio-internacional.html]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[negocio-internacional]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:16:33 CST" name="tearDown" finished-at="2026-09-08T23:16:34 CST" duration-ms="1647" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:16:34 CST" name="setUp" finished-at="2026-09-08T23:16:37 CST" duration-ms="2463" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:16:37 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:16:40 CST" duration-ms="3066" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[PyMes]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[paquetes-pymes.html]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[paquetes-pymes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:16:40 CST" name="tearDown" finished-at="2026-09-08T23:16:41 CST" duration-ms="1678" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:16:41 CST" name="setUp" finished-at="2026-09-08T23:16:45 CST" duration-ms="3163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:16:45 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:16:48 CST" duration-ms="3081" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[PyMes]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[alianzas.html]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[alianzas]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:16:48 CST" name="tearDown" finished-at="2026-09-08T23:16:49 CST" duration-ms="1672" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:16:49 CST" name="setUp" finished-at="2026-09-08T23:16:52 CST" duration-ms="2468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:16:52 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:16:56 CST" duration-ms="4227" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[PyMes]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[negocio-transaccional.html]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[negocio-transaccional]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:16:56 CST" name="tearDown" finished-at="2026-09-08T23:16:58 CST" duration-ms="1659" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:16:58 CST" name="setUp" finished-at="2026-09-08T23:17:00 CST" duration-ms="2458" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:17:00 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:17:04 CST" duration-ms="3936" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[PyMes]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ecosistemas-pyme.html]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ecosistemas-pyme]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:17:04 CST" name="tearDown" finished-at="2026-09-08T23:17:06 CST" duration-ms="1678" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:17:06 CST" name="setUp" finished-at="2026-09-08T23:17:08 CST" duration-ms="2328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:17:08 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:17:12 CST" duration-ms="3456" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[PyMes]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pyme/inversiones.html]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[pyme/inversiones]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:17:12 CST" name="tearDown" finished-at="2026-09-08T23:17:13 CST" duration-ms="1663" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:17:13 CST" name="setUp" finished-at="2026-09-08T23:17:16 CST" duration-ms="2464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:17:16 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:17:18 CST" duration-ms="2526" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Acerca del Banco]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[fundacion-santander.html]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[fundacion-santander]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:17:18 CST" name="tearDown" finished-at="2026-09-08T23:17:20 CST" duration-ms="1656" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:17:20 CST" name="setUp" finished-at="2026-09-08T23:17:22 CST" duration-ms="2501" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:17:22 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:17:28 CST" duration-ms="5650" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Acerca del Banco]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[personas/blog.html]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[blog]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:17:28 CST" name="tearDown" finished-at="2026-09-08T23:17:30 CST" duration-ms="1650" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:17:30 CST" name="setUp" finished-at="2026-09-08T23:17:33 CST" duration-ms="3685" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:17:33 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:17:36 CST" duration-ms="2766" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Acerca del Banco]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[responsabilidad-social.html]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[responsabilidad-social]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:17:36 CST" name="tearDown" finished-at="2026-09-08T23:17:38 CST" duration-ms="1655" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:17:38 CST" name="setUp" finished-at="2026-09-08T23:17:40 CST" duration-ms="2555" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:17:40 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:17:43 CST" duration-ms="2203" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Acerca del Banco]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[educacion-financiera/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[educacion-financiera]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:17:43 CST" name="tearDown" finished-at="2026-09-08T23:17:44 CST" duration-ms="1651" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:17:44 CST" name="setUp" finished-at="2026-09-08T23:17:47 CST" duration-ms="2467" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:17:47 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:17:50 CST" duration-ms="3263" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Acerca del Banco]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ir/home/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ir/home]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:17:50 CST" name="tearDown" finished-at="2026-09-08T23:17:52 CST" duration-ms="1670" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:17:52 CST" name="setUp" finished-at="2026-09-08T23:17:54 CST" duration-ms="2484" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:17:54 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:18:07 CST" duration-ms="12983" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Acerca del Banco]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sala_prensa_2026.html]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[sala_prensa_2026]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:18:07 CST" name="tearDown" finished-at="2026-09-08T23:18:09 CST" duration-ms="1682" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:18:09 CST" name="setUp" finished-at="2026-09-08T23:18:11 CST" duration-ms="2457" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySiteLinkSantander(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:18:11 CST" name="verifySiteLinkSantander" data-provider="menuItems" finished-at="2026-09-08T23:18:13 CST" duration-ms="2087" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Acerca del Banco]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[personas/bolsa-de-trabajo.html]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[bolsa-de-trabajo]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySiteLinkSantander -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BankSiteTests@50a638b5]" started-at="2026-09-08T23:18:13 CST" name="tearDown" finished-at="2026-09-08T23:18:15 CST" duration-ms="1665" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.BankSiteTests -->
+    </test> <!-- Santander - Links de Menu Principal -->
+  </suite> <!-- Test Automation Santander -->
+</testng-results>

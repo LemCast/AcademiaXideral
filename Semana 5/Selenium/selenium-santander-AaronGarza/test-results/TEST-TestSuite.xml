@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="427.117" tests="60" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\aaron\IdeaProjects\selenium-santander-AaronGarza\target\test-classes;C:\Users\aaron\IdeaProjects\selenium-santander-AaronGarza\target\classes;C:\Users\aaron\.m2\repository\org\seleniumhq\selenium\selenium-java\4.48.0\selenium-java-4.48.0.jar;C:\Users\aaron\.m2\repository\org\seleniumhq\selenium\selenium-api\4.48.0\selenium-api-4.48.0.jar;C:\Users\aaron\.m2\repository\org\jspecify\jspecify\1.0.1\jspecify-1.0.1.jar;C:\Users\aaron\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.48.0\selenium-chrome-driver-4.48.0.jar;C:\Users\aaron\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\aaron\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.48.0\selenium-chromium-driver-4.48.0.jar;C:\Users\aaron\.m2\repository\org\seleniumhq\selenium\selenium-json\4.48.0\selenium-json-4.48.0.jar;C:\Users\aaron\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.48.0\selenium-manager-4.48.0.jar;C:\Users\aaron\.m2\repository\org\seleniumhq\selenium\selenium-devtools-latest\4.48.0\selenium-devtools-latest-4.48.0.jar;C:\Users\aaron\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v150\4.48.0\selenium-devtools-v150-4.48.0.jar;C:\Users\aaron\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v151\4.48.0\selenium-devtools-v151-4.48.0.jar;C:\Users\aaron\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v152\4.48.0\selenium-devtools-v152-4.48.0.jar;C:\Users\aaron\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.48.0\selenium-edge-driver-4.48.0.jar;C:\Users\aaron\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.48.0\selenium-firefox-driver-4.48.0.jar;C:\Users\aaron\.m2\repository\org\seleniumhq\selenium\selenium-http\4.48.0\selenium-http-4.48.0.jar;C:\Users\aaron\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.48.0\selenium-ie-driver-4.48.0.jar;C:\Users\aaron\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.48.0\selenium-remote-driver-4.48.0.jar;C:\Users\aaron\.m2\repository\com\google\guava\guava\33.6.0-jre\guava-33.6.0-jre.jar;C:\Users\aaron\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\aaron\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\aaron\.m2\repository\com\google\errorprone\error_prone_annotations\2.47.0\error_prone_annotations-2.47.0.jar;C:\Users\aaron\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\aaron\.m2\repository\io\opentelemetry\opentelemetry-api\1.65.0\opentelemetry-api-1.65.0.jar;C:\Users\aaron\.m2\repository\io\opentelemetry\opentelemetry-context\1.65.0\opentelemetry-context-1.65.0.jar;C:\Users\aaron\.m2\repository\io\opentelemetry\opentelemetry-common\1.65.0\opentelemetry-common-1.65.0.jar;C:\Users\aaron\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.65.0\opentelemetry-exporter-logging-1.65.0.jar;C:\Users\aaron\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.65.0\opentelemetry-sdk-common-1.65.0.jar;C:\Users\aaron\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.65.0\opentelemetry-sdk-extension-autoconfigure-spi-1.65.0.jar;C:\Users\aaron\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.65.0\opentelemetry-sdk-extension-autoconfigure-1.65.0.jar;C:\Users\aaron\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.65.0\opentelemetry-sdk-trace-1.65.0.jar;C:\Users\aaron\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.65.0\opentelemetry-sdk-1.65.0.jar;C:\Users\aaron\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.65.0\opentelemetry-sdk-metrics-1.65.0.jar;C:\Users\aaron\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.65.0\opentelemetry-sdk-logs-1.65.0.jar;C:\Users\aaron\.m2\repository\net\bytebuddy\byte-buddy\1.18.11\byte-buddy-1.18.11.jar;C:\Users\aaron\.m2\repository\org\seleniumhq\selenium\selenium-os\4.48.0\selenium-os-4.48.0.jar;C:\Users\aaron\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.48.0\selenium-safari-driver-4.48.0.jar;C:\Users\aaron\.m2\repository\org\seleniumhq\selenium\selenium-support\4.48.0\selenium-support-4.48.0.jar;C:\Users\aaron\.m2\repository\org\testng\testng\7.9.0\testng-7.9.0.jar;C:\Users\aaron\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\aaron\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\aaron\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="America/Guatemala"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Users\aaron\Documents\Work\Maven\OpenJDK\jdk-21.0.12+8\bin"/>
+    <property name="sun.java.command" value="C:\Users\aaron\AppData\Local\Temp\surefire6620355674774565103\surefirebooter-20260908231108250_3.jar C:\Users\aaron\AppData\Local\Temp\surefire6620355674774565103 2026-09-08T23-11-08_160-jvmRun1 surefire-20260908231108250_1tmp surefire_0-20260908231108250_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\aaron\IdeaProjects\selenium-santander-AaronGarza\target\test-classes;C:\Users\aaron\IdeaProjects\selenium-santander-AaronGarza\target\classes;C:\Users\aaron\.m2\repository\org\seleniumhq\selenium\selenium-java\4.48.0\selenium-java-4.48.0.jar;C:\Users\aaron\.m2\repository\org\seleniumhq\selenium\selenium-api\4.48.0\selenium-api-4.48.0.jar;C:\Users\aaron\.m2\repository\org\jspecify\jspecify\1.0.1\jspecify-1.0.1.jar;C:\Users\aaron\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.48.0\selenium-chrome-driver-4.48.0.jar;C:\Users\aaron\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\aaron\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.48.0\selenium-chromium-driver-4.48.0.jar;C:\Users\aaron\.m2\repository\org\seleniumhq\selenium\selenium-json\4.48.0\selenium-json-4.48.0.jar;C:\Users\aaron\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.48.0\selenium-manager-4.48.0.jar;C:\Users\aaron\.m2\repository\org\seleniumhq\selenium\selenium-devtools-latest\4.48.0\selenium-devtools-latest-4.48.0.jar;C:\Users\aaron\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v150\4.48.0\selenium-devtools-v150-4.48.0.jar;C:\Users\aaron\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v151\4.48.0\selenium-devtools-v151-4.48.0.jar;C:\Users\aaron\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v152\4.48.0\selenium-devtools-v152-4.48.0.jar;C:\Users\aaron\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.48.0\selenium-edge-driver-4.48.0.jar;C:\Users\aaron\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.48.0\selenium-firefox-driver-4.48.0.jar;C:\Users\aaron\.m2\repository\org\seleniumhq\selenium\selenium-http\4.48.0\selenium-http-4.48.0.jar;C:\Users\aaron\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.48.0\selenium-ie-driver-4.48.0.jar;C:\Users\aaron\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.48.0\selenium-remote-driver-4.48.0.jar;C:\Users\aaron\.m2\repository\com\google\guava\guava\33.6.0-jre\guava-33.6.0-jre.jar;C:\Users\aaron\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\aaron\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\aaron\.m2\repository\com\google\errorprone\error_prone_annotations\2.47.0\error_prone_annotations-2.47.0.jar;C:\Users\aaron\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\aaron\.m2\repository\io\opentelemetry\opentelemetry-api\1.65.0\opentelemetry-api-1.65.0.jar;C:\Users\aaron\.m2\repository\io\opentelemetry\opentelemetry-context\1.65.0\opentelemetry-context-1.65.0.jar;C:\Users\aaron\.m2\repository\io\opentelemetry\opentelemetry-common\1.65.0\opentelemetry-common-1.65.0.jar;C:\Users\aaron\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.65.0\opentelemetry-exporter-logging-1.65.0.jar;C:\Users\aaron\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.65.0\opentelemetry-sdk-common-1.65.0.jar;C:\Users\aaron\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.65.0\opentelemetry-sdk-extension-autoconfigure-spi-1.65.0.jar;C:\Users\aaron\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.65.0\opentelemetry-sdk-extension-autoconfigure-1.65.0.jar;C:\Users\aaron\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.65.0\opentelemetry-sdk-trace-1.65.0.jar;C:\Users\aaron\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.65.0\opentelemetry-sdk-1.65.0.jar;C:\Users\aaron\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.65.0\opentelemetry-sdk-metrics-1.65.0.jar;C:\Users\aaron\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.65.0\opentelemetry-sdk-logs-1.65.0.jar;C:\Users\aaron\.m2\repository\net\bytebuddy\byte-buddy\1.18.11\byte-buddy-1.18.11.jar;C:\Users\aaron\.m2\repository\org\seleniumhq\selenium\selenium-os\4.48.0\selenium-os-4.48.0.jar;C:\Users\aaron\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.48.0\selenium-safari-driver-4.48.0.jar;C:\Users\aaron\.m2\repository\org\seleniumhq\selenium\selenium-support\4.48.0\selenium-support-4.48.0.jar;C:\Users\aaron\.m2\repository\org\testng\testng\7.9.0\testng-7.9.0.jar;C:\Users\aaron\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\aaron\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\aaron\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\aaron"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-07-21"/>
+    <property name="java.home" value="C:\Users\aaron\Documents\Work\Maven\OpenJDK\jdk-21.0.12+8"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\aaron\IdeaProjects\selenium-santander-AaronGarza"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\aaron\AppData\Local\Temp\surefire6620355674774565103\surefirebooter-20260908231108250_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.12+8-LTS"/>
+    <property name="user.name" value="aaron"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-21.0.12+8"/>
+    <property name="localRepository" value="C:\Users\aaron\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\aaron\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.12"/>
+    <property name="user.dir" value="C:\Users\aaron\IdeaProjects\selenium-santander-AaronGarza"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\aaron\Documents\Work\Maven\OpenJDK\jdk-21.0.12+8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\Users\aaron\Documents\Work\Maven\apache-maven-3.9.16\bin;C:\Users\aaron\Documents\Work\Maven\OpenJDK\jdk-21.0.12+8\bin;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\Users\aaron\AppData\Local\Programs\Python\Python314\Scripts\;C:\Users\aaron\AppData\Local\Programs\Python\Python314\;C:\Users\aaron\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\aaron\AppData\Local\Programs\Python\Python312\;C:\Users\aaron\AppData\Local\Microsoft\WindowsApps;;C:\Users\aaron\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\aaron\.dotnet\tools;C:\Users\aaron\AppData\Roaming\npm;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="21.0.12+8-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="verifyBancaPrivada" classname="tests.BankSiteTests" time="2.013">
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyHazteCliente" classname="tests.BankSiteTests" time="1.866"/>
+  <testcase name="verifySiteLinkSantander[Personas, tarjetas-de-credito/, tarjetas-de-credito](1)" classname="tests.BankSiteTests" time="1.483"/>
+  <testcase name="verifySiteLinkSantander[Personas, creditos-personales/, creditos-personales](2)" classname="tests.BankSiteTests" time="1.971"/>
+  <testcase name="verifySiteLinkSantander[Personas, creditos-hipotecarios/, creditos-hipotecarios](3)" classname="tests.BankSiteTests" time="1.923"/>
+  <testcase name="verifySiteLinkSantander[Personas, simulador-hipotecario/, simulador-hipotecario](4)" classname="tests.BankSiteTests" time="2.626"/>
+  <testcase name="verifySiteLinkSantander[Personas, credito-automotriz/, credito-automotriz](5)" classname="tests.BankSiteTests" time="2.226"/>
+  <testcase name="verifySiteLinkSantander[Personas, buro-de-credito/, buro-de-credito](6)" classname="tests.BankSiteTests" time="2.007"/>
+  <testcase name="verifySiteLinkSantander[Personas, santander-digital/, santander-digital](7)" classname="tests.BankSiteTests" time="1.463"/>
+  <testcase name="verifySiteLinkSantander[Personas, app-santander/, app-santander](8)" classname="tests.BankSiteTests" time="1.507"/>
+  <testcase name="verifySiteLinkSantander[Personas, santander-web/, santander-web](9)" classname="tests.BankSiteTests" time="2.031"/>
+  <testcase name="verifySiteLinkSantander[Personas, limite-por-transaccion/, limite-por-transaccion](10)" classname="tests.BankSiteTests" time="1.509"/>
+  <testcase name="verifySiteLinkSantander[Personas, personas/cuentas/, personas/cuentas](11)" classname="tests.BankSiteTests" time="2.134"/>
+  <testcase name="verifySiteLinkSantander[Personas, cuentas/basica/, cuentas/basica](12)" classname="tests.BankSiteTests" time="1.899"/>
+  <testcase name="verifySiteLinkSantander[Personas, basica-nomina/, basica-nomina](13)" classname="tests.BankSiteTests" time="1.95"/>
+  <testcase name="verifySiteLinkSantander[Personas, cheque-saldo-promedio/, cheque-saldo-promedio](14)" classname="tests.BankSiteTests" time="1.942"/>
+  <testcase name="verifySiteLinkSantander[Personas, portabilidad-de-nomina/, portabilidad-de-nomina](15)" classname="tests.BankSiteTests" time="2.203"/>
+  <testcase name="verifySiteLinkSantander[Personas, #fondos-de-inversion, fondos-de-inversion](16)" classname="tests.BankSiteTests" time="2.128"/>
+  <testcase name="verifySiteLinkSantander[Personas, #inversiones-a-plazo, inversiones-a-plazo](17)" classname="tests.BankSiteTests" time="2.12"/>
+  <testcase name="verifySiteLinkSantander[Personas, #notas-estructuradas, notas-estructuradas](18)" classname="tests.BankSiteTests" time="2.122"/>
+  <testcase name="verifySiteLinkSantander[Personas, seguros.html#auto, seguros.html#auto](19)" classname="tests.BankSiteTests" time="3.038"/>
+  <testcase name="verifySiteLinkSantander[Personas, seguros.html#vida, seguros.html#vida](20)" classname="tests.BankSiteTests" time="2.286"/>
+  <testcase name="verifySiteLinkSantander[Personas, seguros.html#hogar, seguros.html#hogar](21)" classname="tests.BankSiteTests" time="2.31"/>
+  <testcase name="verifySiteLinkSantander[Personas, seguros.html#ahorro, seguros.html#ahorro](22)" classname="tests.BankSiteTests" time="3.01"/>
+  <testcase name="verifySiteLinkSantander[Personas, seguros.html#gastos-medicos, gastos-medicos](23)" classname="tests.BankSiteTests" time="2.89"/>
+  <testcase name="verifySiteLinkSantander[Personas, seguros.html#pertenencias, pertenencias](24)" classname="tests.BankSiteTests" time="3.0"/>
+  <testcase name="verifySiteLinkSantander[Personas, superlinea.html, superlinea](25)" classname="tests.BankSiteTests" time="1.763"/>
+  <testcase name="verifySiteLinkSantander[Personas, sucursales.html, sucursales](26)" classname="tests.BankSiteTests" time="2.609"/>
+  <testcase name="verifySiteLinkSantander[Personas, cajeros-automaticos.html, cajeros-automaticos](27)" classname="tests.BankSiteTests" time="1.96"/>
+  <testcase name="verifySiteLinkSantander[Personas, operaciones-canales-alternos/index.html, canales-alternos](28)" classname="tests.BankSiteTests" time="2.557"/>
+  <testcase name="verifySiteLinkSantander[Personas, centro-de-ayuda.html, centro-de-ayuda](29)" classname="tests.BankSiteTests" time="1.789"/>
+  <testcase name="verifySiteLinkSantander[Personas, centro-de-seguridad/, centro-de-seguridad](30)" classname="tests.BankSiteTests" time="1.899"/>
+  <testcase name="verifySiteLinkSantander[Personas, tutoriales.html, tutoriales](31)" classname="tests.BankSiteTests" time="1.903"/>
+  <testcase name="verifySiteLinkSantander[Personas, terminos-y-condiciones.html, tyc](32)" classname="tests.BankSiteTests" time="2.149"/>
+  <testcase name="verifySiteLinkSantander[Personas, tramite-por-defuncion.html, tramite-por-defuncion](33)" classname="tests.BankSiteTests" time="1.945"/>
+  <testcase name="verifySiteLinkSantander[Personas, select.html, select.html](34)" classname="tests.BankSiteTests" time="2.143"/>
+  <testcase name="verifySiteLinkSantander[Personas, promociones/, promociones](35)" classname="tests.BankSiteTests" time="2.02"/>
+  <testcase name="verifySiteLinkSantander[Personas, uniquerewards.santander.com.mx/web/home, uniquerewards](36)" classname="tests.BankSiteTests" time="2.758"/>
+  <testcase name="verifySiteLinkSantander[Personas, mundohogar.com.mx  , mundohogar](37)" classname="tests.BankSiteTests" time="1.982"/>
+  <testcase name="verifySiteLinkSantander[Personas, colectivos.html, colectivos](38)" classname="tests.BankSiteTests" time="2.191"/>
+  <testcase name="verifySiteLinkSantander[Personas, cashback.html, cashback](39)" classname="tests.BankSiteTests" time="3.132"/>
+  <testcase name="verifySiteLinkSantander[Empresas, bei/home.html, bei/home](40)" classname="tests.BankSiteTests" time="2.546"/>
+  <testcase name="verifySiteLinkSantander[Empresas, multinacionales.html, multinacionales](41)" classname="tests.BankSiteTests" time="2.074"/>
+  <testcase name="verifySiteLinkSantander[PyMes, pyme/cuentas.html, pyme/cuentas](42)" classname="tests.BankSiteTests" time="3.538"/>
+  <testcase name="verifySiteLinkSantander[PyMes, pyme/creditos.html, pyme/creditos](43)" classname="tests.BankSiteTests" time="4.563"/>
+  <testcase name="verifySiteLinkSantander[PyMes, pyme/seguros.html, pyme/seguros](44)" classname="tests.BankSiteTests" time="5.083"/>
+  <testcase name="verifySiteLinkSantander[PyMes, coberturas-y-cambios.html, coberturas-y-cambios](45)" classname="tests.BankSiteTests" time="3.435"/>
+  <testcase name="verifySiteLinkSantander[PyMes, negocio-internacional.html, negocio-internacional](46)" classname="tests.BankSiteTests" time="4.341"/>
+  <testcase name="verifySiteLinkSantander[PyMes, paquetes-pymes.html, paquetes-pymes](47)" classname="tests.BankSiteTests" time="3.066"/>
+  <testcase name="verifySiteLinkSantander[PyMes, alianzas.html, alianzas](48)" classname="tests.BankSiteTests" time="3.082"/>
+  <testcase name="verifySiteLinkSantander[PyMes, negocio-transaccional.html, negocio-transaccional](49)" classname="tests.BankSiteTests" time="4.226"/>
+  <testcase name="verifySiteLinkSantander[PyMes, ecosistemas-pyme.html, ecosistemas-pyme](50)" classname="tests.BankSiteTests" time="3.937"/>
+  <testcase name="verifySiteLinkSantander[PyMes, pyme/inversiones.html, pyme/inversiones](51)" classname="tests.BankSiteTests" time="3.457"/>
+  <testcase name="verifySiteLinkSantander[Acerca del Banco, fundacion-santander.html, fundacion-santander](52)" classname="tests.BankSiteTests" time="2.526"/>
+  <testcase name="verifySiteLinkSantander[Acerca del Banco, personas/blog.html, blog](53)" classname="tests.BankSiteTests" time="5.651"/>
+  <testcase name="verifySiteLinkSantander[Acerca del Banco, responsabilidad-social.html, responsabilidad-social](54)" classname="tests.BankSiteTests" time="2.766"/>
+  <testcase name="verifySiteLinkSantander[Acerca del Banco, educacion-financiera/, educacion-financiera](55)" classname="tests.BankSiteTests" time="2.204"/>
+  <testcase name="verifySiteLinkSantander[Acerca del Banco, ir/home/, ir/home](56)" classname="tests.BankSiteTests" time="3.263"/>
+  <testcase name="verifySiteLinkSantander[Acerca del Banco, sala_prensa_2026.html, sala_prensa_2026](57)" classname="tests.BankSiteTests" time="12.983"/>
+  <testcase name="verifySiteLinkSantander[Acerca del Banco, personas/bolsa-de-trabajo.html, bolsa-de-trabajo](58)" classname="tests.BankSiteTests" time="2.088"/>
+</testsuite>
